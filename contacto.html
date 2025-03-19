@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Fisioterapia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        .custom-font {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-cyan-50 text-gray-900 custom-font">
+    <header data-include="header.html"></header>
+
+    <main class="p-8">
+        <h2 class="text-5xl font-bold text-center text-cyan-500 mb-4">
+            Contacta  <span class="text-blue-950">con nosotros</span>
+        </h2>
+
+        <h2 class="text-2xl font-bold text-center text-blue-950 mb-4">
+            ¿Necesitas <span class="text-cyan-500">información?</span>
+        </h2>
+
+        <p class="text-center text-lg mb-8">
+            Si tienes alguna duda o necesitas más información sobre nuestros servicios:
+
+
+
+            <section class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                <!-- Tarjeta Teléfono -->
+                <div class="bg-white p-6 rounded-lg shadow-md border-4 border-cyan-500 flex flex-col items-center space-y-4 transition transform hover:scale-105 hover:shadow-xl duration-300 animate-fade-up">
+                    <img src="images/icons/fisioterapia-sevilla-llamar.png" alt="Teléfono" class="w-12 h-12">
+                    <h3 class="text-xl font-semibold text-blue-950">Llámanos</h3>
+                    <a href="tel:+34671011632" class="text-lg text-blue-950 hover:text-cyan-500 transition duration-300">
+                        +34 671 011 632
+                    </a>
+                </div>
+            
+                <!-- Tarjeta Correo -->
+                <div class="bg-white p-6 rounded-lg shadow-md border-4 border-cyan-500 flex flex-col items-center space-y-4 transition transform hover:scale-105 hover:shadow-xl duration-300 animate-fade-up delay-100">
+                    <img src="images/icons/fisioterapia-sevilla-correo.png" alt="Correo" class="w-12 h-12">
+                    <h3 class="text-xl font-semibold text-blue-950">Correo Electrónico</h3>
+                    <a href="mailto:contacto@fisioterapia.com" class="text-lg text-blue-950 hover:text-cyan-500 transition duration-300">
+                        contacto@fisioterapia.com
+                    </a>
+                </div>
+            
+                <!-- Tarjeta WhatsApp -->
+                <div class="bg-white p-6 rounded-lg shadow-md border-4 border-cyan-500 flex flex-col items-center space-y-4 transition transform hover:scale-105 hover:shadow-xl duration-300 animate-fade-up delay-200">
+                    <img src="images/icons/fisioterapia-sevilla-whatsapp.png" alt="WhatsApp" class="w-12 h-12">
+                    <h3 class="text-xl font-semibold text-blue-950">WhatsApp</h3>
+                    <a href="https://wa.me/+34671011632?text=Hola!%20me%20gustaría%20pedir%20cita.%20Gracias!" class="text-lg text-blue-950 hover:text-cyan-500 transition duration-300">
+                        Enviar mensaje
+                    </a>
+                </div>
+            </section>
+            
+        
+        
+    </main>
+
+    <div data-include="footer.html"></div>
+    <script src="js/include.js"></script>
+</body>
+</html>

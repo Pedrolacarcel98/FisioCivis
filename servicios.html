@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios de Fisioterapia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="js/include.js"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+        }
+        .content.show {
+            max-height: 1000px; /* Ajusta este valor según sea necesario */
+        }
+    </style>
+</head>
+<body class="bg-cyan-50 text-gray-900 font-poppins">
+
+    <div data-include="header.html"></div>
+        
+    <main class="p-4">
+        <div class="bg-white p-6 rounded-lg shadow-md mb-6 flex items-center">
+            <img src="images/services/neuro.png" alt="Icono Neurológica" class="h-12 w-12 mr-4">
+            <div class="flex-1">
+                <button class="w-full text-left text-2xl font-semibold mb-2 focus:outline-none" onclick="toggleContent('neuro')">
+                    Fisioterapia Neurológica
+                    <span class="float-right">+</span>
+                </button>
+                <div id="neuro" class="content mt-2 text-gray-700">
+                    La fisioterapia neurológica se centra en el tratamiento de personas con trastornos del sistema nervioso. Estos trastornos pueden incluir enfermedades como el accidente cerebrovascular, la esclerosis múltiple, el Parkinson, las lesiones medulares, entre otras.
+                </div>
+            </div>
+        </div>
+        
+        <div class="bg-white p-6 rounded-lg shadow-md mb-6 flex items-center">
+            <img src="images/services/respi.png" alt="Icono Respiratoria" class="h-12 w-12 mr-4">
+            <div class="flex-1">
+                <button class="w-full text-left text-2xl font-semibold mb-2 focus:outline-none" onclick="toggleContent('resp')">
+                    Fisioterapia Respiratoria
+                    <span class="float-right">+</span>
+                </button>
+                <div id="resp" class="content mt-2 text-gray-700">
+                    La fisioterapia respiratoria ayuda a mejorar la función pulmonar y la capacidad respiratoria en pacientes con enfermedades respiratorias.
+                </div>
+            </div>
+        </div>
+        
+        <div class="bg-white p-6 rounded-lg shadow-md mb-6 flex items-center">
+            <img src="images/services/ger.png" alt="Icono Geriátrica" class="h-12 w-12 mr-4">
+            <div class="flex-1">
+                <button class="w-full text-left text-2xl font-semibold mb-2 focus:outline-none" onclick="toggleContent('ger')">
+                    Fisioterapia Geriátrica
+                    <span class="float-right">+</span>
+                </button>
+                <div id="ger" class="content mt-2 text-gray-700">
+                    La fisioterapia geriátrica se especializa en el cuidado de personas mayores, ayudando a mejorar su movilidad y calidad de vida.
+                </div>
+            </div>
+        </div>
+        
+        <div class="bg-white p-6 rounded-lg shadow-md mb-6 flex items-center">
+            <img src="images/services/traum.png" alt="Icono Traumatológica" class="h-12 w-12 mr-4">
+            <div class="flex-1">
+                <button class="w-full text-left text-2xl font-semibold mb-2 focus:outline-none" onclick="toggleContent('traum')">
+                    Fisioterapia Traumatológica
+                    <span class="float-right">+</span>
+                </button>
+                <div id="traum" class="content mt-2 text-gray-700">
+                    La fisioterapia traumatológica se centra en la rehabilitación de lesiones musculoesqueléticas causadas por traumatismos.
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    
+    <div data-include="footer.html"></div>
+
+    <script src="js/include.js"></script>
+    <script>
+        function toggleContent(id) {
+            const content = document.getElementById(id);
+            content.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>

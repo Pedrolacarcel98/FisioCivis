@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fisioterapia Salud & Bienestar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        .custom-font {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-cyan custom-font">
+   
+    <!-- PROBANDO HEADER CON JS -->
+
+    <div data-include="header.html"></div>
+    
+    <div class="container mx-auto p-6 text-center">
+        <a href="https://wa.me/+34671011632?text=Hola%2C%20quiero%20reservar%20una%20cita%20de%20fisioterapia" class="mt-6 inline-block bg-cyan-500 text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-green-600 transition-transform transform hover:scale-110 duration-300">Reservar cita</a>
+
+        <h2 class="text-2xl font-semibold text-cyan animate-fade-in-up">Bienvenido a nuestro centro de fisioterapia</h2>
+        <p class="mt-2 text-cyan">Brindamos tratamientos personalizados para mejorar tu bienestar.</p>
+        
+        <section id="servicios" class="services mt-8 opacity-0 transform translate-y-10 transition-all duration-700 ease-in-out" onload="this.classList.remove('opacity-0', 'translate-y-10')">
+            <h3 class="text-xl font-semibold text-cyan">Nuestros Servicios</h3>
+            <p class="mt-2 text-cyan">Masajes terapéuticos, rehabilitación, osteopatía y más.</p>
+        </section>
+        
+        <section id="precios" class="prices mt-8 opacity-0 transform translate-y-10 transition-all duration-700 ease-in-out delay-200" onload="this.classList.remove('opacity-0', 'translate-y-10')">
+            <h3 class="text-xl font-semibold text-cyan">Tarifas</h3>
+            <p class="mt-2 text-cyan">Consulta nuestra lista de precios accesibles.</p>
+        </section>
+        
+    </div>
+
+    <div data-include="footer.html"></div>
+
+    <script src="js/include.js"></script>
+  
+</body>
+</html>
