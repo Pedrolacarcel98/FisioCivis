@@ -3,26 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fisioterapia en Sevilla | Salud & Bienestar</title>
+    <title>FisioCivis | Fisioterapia a domicilio</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/fuentes.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <meta name="description" content="Centro de fisioterapia en Sevilla. Expertos en masajes, osteopatía y fisioterapia a domicilio para tu bienestar." />
     <meta name="keywords" content="Fisioterapia Sevilla, Fisioterapia a Domicilio, Rehabilitación, Masajes terapéuticos" />
     <meta name="author" content="Salud & Bienestar" />
-    <style>
-        .custom-font { font-family: 'Poppins', sans-serif; }
-    </style>
+
 </head>
+
 <body class="bg-gradient-to-b from-cyan-50 via-cyan-300 to-blue-950 text-gray-900 custom-font">
     
     <div data-include="header.html"></div>
 
-    <section class="text-cyan-500 text-center py-12 px-6 max-w-3xl mx-auto rounded-lg">
-        <h1 class="text-4xl font-bold animate-fade-in">
+    <section class="bg-white/50 border-l-4 border-cyan-500 shadow-xl text-cyan-500 text-center py-12 px-6 max-w-5xl mx-auto  mt-12">
+        <h1 class="text-6xl font-bold animate-fade-in">
             <span class="text-cyan-500">Bienvenido a</span> 
             <span class="text-blue-950">Fisio</span><span class="text-cyan-500">civis</span>
         </h1>
-        <p class="text-lg text-blue-950 mt-4">Expertos en <strong>fisioterapia en Sevilla</strong> y tratamientos a domicilio.</p>
+        <h2 class="text-lg text-blue-950 mt-4">Expertos en <strong>fisioterapia en Sevilla</strong> y tratamientos a domicilio.</h2>
         <a href="https://wa.me/+34671011632?text=Hola!%20Me%20gustaría%20pedir%20cita.%20Gracias!" 
            class="mt-6 inline-block bg-blue-950 text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-cyan-500 transition-transform transform hover:scale-110 duration-300">
             Reserva tu cita ahora
@@ -32,10 +32,12 @@
 
     <div class="container mx-auto p-6 text-center">
         <section id="servicios" class="mt-12">
-            <h2 class="text-3xl font-semibold text-blue-950">Nuestros Servicios</h2>
-            <p class="mt-2 text-gray-600">Te ofrecemos tratamientos personalizados para aliviar el dolor y mejorar tu movilidad.</p>
+            <h2 class="text-5xl font-semibold text-blue-950">Nuestros Servicios</h2>
+            <p class="mt-2 text-gray-600">Te ofrecemos tratamientos personalizados para aliviar el dolor y mejorar tu movilidad. <span><a href="servicios.html">Servicios</a></span></p>
+            
+            
             <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mt-6">
-                <div class="bg-white p-6 rounded-lg shadow-lg">
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
                     <img src="images/icons/fisioterapia-cerebro.png" alt="Fisioterapia Neurológica" class="w-16 h-16 mx-auto mb-3">
                     <h3 class="text-xl font-semibold text-cyan-500">Fisioterapia Neurológica</h3>
                     <p class="text-gray-600 mt-2">Nos centramos en el sistema nervioso para mejorar tu movilidad</p>
@@ -46,29 +48,44 @@
                     <h3 class="text-xl font-semibold text-cyan-500">Fisioterapia Respiratoria</h3>
                     <p class="text-gray-600 mt-2">Para mejorar tus funciones pulmonares</p>
                 </div>
+
                 <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
                     <img src="images/icons/fisioterapia-anciano.png" alt="Fisioterapia Geriátrica" class="w-16 h-16 mx-auto mb-3">
                     <h3 class="text-xl font-semibold text-cyan-500">Fisioterapia geriatrica</h3>
                     <p class="text-gray-600 mt-2">Tratamientos para nuestros mayores</p>
                 </div>
+
                 <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition">
                     <img src="images/icons/fisioterapia-hueso.png" alt="Fisioterapia Traumatológica" class="w-16 h-16 mx-auto mb-3">
 
                     <h3 class="text-xl font-semibold text-cyan-500">Fisioterapia a Traumatológica</h3>
                     <p class="text-gray-600 mt-2">Rehabilitación de lesiones musculoesqueléticas </p>
                 </div>
+
+                
             </div>
+
+            <div class="mt-6 text-center">
+                <p class="text-gray-600">
+                    ¿Quieres saber más sobre nuestros servicios? 
+                    <a href="servicios.html" class="text-blue-950 font-semibold hover:underline">
+                        Haz clic aquí para más información
+                    </a>.
+                </p>
+            </div> 
+
         </section>
 
-        <section id="precios" class="mt-12">
-            <h2 class="text-3xl font-semibold text-blue-950">Precios</h2>
+        <section id="precios" class="max-w-3xl p-5 mx-auto mt-12">
+            <h2 class="text-5xl font-semibold text-blue-950">Precios</h2>
             <p class="mt-2 text-gray-600">Tratamientos por colegiados en el ICPFA a precios accesibles.</p>
-            <div class="mt-6 bg-white text-cyan-500 p-6 rounded-lg shadow-lg">
-                <h3 class="text-3xl font-semibold">Primera sesión: <span class="text-blue-950 text-4xl font-extrabold">45€</span></h3>
+            <div class="mt-6 bg-blue-950  text-cyan-500 p-6 rounded-lg shadow-lg">
+                <h3 class="text-3xl font-semibold">Primera sesión: </h3>
+                <h3 class="text-white text-6xl font-extrabold">45€</h3>
                 <p class="mt-2 text-lg">Consultas de 50'</p>
                 <div class="flex justify-center mt-6">
                     <a href="precios.html" class="flex items-center text-center text-2xl font-semibold text-white bg-blue-950 py-3 px-6 rounded-lg hover:bg-cyan-500 hover:text-white transition duration-300 transform hover:scale-110">
-                        <span class="mr-2">Nuestros precios</span>
+                        <span class="mr-2">Precios</span>
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 ml-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M5 12h14"></path>
                             <path d="M12 5l7 7-7 7"></path>
@@ -84,5 +101,7 @@
     <div data-include="footer.html"></div>
 
     <script src="js/include.js"></script>
+    <script src="js/header.js" defer></script>
+
 </body>
 </html>
