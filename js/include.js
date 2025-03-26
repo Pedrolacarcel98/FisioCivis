@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     })
                     .then(() => {
                         // Attach event listener after content is loaded
-                        document.getElementById('menu-btn').addEventListener('click', () => {
+                        document.getElementById('menu-toggle').addEventListener('click', () => {
                             const menu = document.getElementById('menu');
                             menu.classList.toggle('hidden');
                         });

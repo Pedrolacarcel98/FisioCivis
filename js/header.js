@@ -1,25 +1,20 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const menuBtn = document.getElementById("menu-btn");
-    const menu = document.getElementById("menu");
-    const submenuBtn = document.getElementById("submenu-btn");
-    const submenu = document.getElementById("submenu");
+// Autor: Pedro Lacárcel
 
-    // Alternar el menú hamburguesa en pantallas pequeñas
-    menuBtn.addEventListener("click", () => {
-        menu.classList.toggle("hidden"); // Muestra o esconde el menú
-        menuBtn.textContent = menu.classList.contains("hidden") ? "☰" : "✖"; // Cambiar icono
-    });
+document.addEventListener("DOMContentLoaded", function () {
+  const menuToggle = document.getElementById("menu-toggle");
+  const menu = document.getElementById("menu");
 
-    // Alternar el submenú de "Servicios"
-    submenuBtn.addEventListener("click", (e) => {
-        e.preventDefault(); // Evitar la acción predeterminada
-        submenu.classList.toggle("hidden"); // Mostrar u ocultar el submenú
+  if (menuToggle && menu) {
+    menuToggle.addEventListener("click", function () {
+      // Si el menú está oculto, lo mostramos con display flex en dirección columna (para móviles)
+      if (menu.classList.contains("hidden")) {
+        menu.classList.remove("hidden");
+        menu.classList.add("flex", "flex-col");
+      } else {
+        // De lo contrario, lo ocultamos
+        menu.classList.add("hidden");
+        menu.classList.remove("flex", "flex-col");
+      }
     });
-
-    // Cerrar el submenú si se hace clic fuera de él
-    document.addEventListener("click", (e) => {
-        if (!submenu.contains(e.target) && e.target !== submenuBtn) {
-            submenu.classList.add("hidden"); // Cerrar el submenú si no se hace clic en él
-        }
-    });
+  }
 });
