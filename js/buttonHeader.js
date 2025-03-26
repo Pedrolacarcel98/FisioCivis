@@ -1,13 +1,6 @@
-   document.addEventListener('DOMContentLoaded', () => {
-        const menuBtn = document.getElementById('menu-btn');
-        const menu = document.getElementById('menu');
-
-        menuBtn.addEventListener('click', () => {
-            menu.classList.toggle('hidden');
-            if (menu.classList.contains('hidden')) {
-                menuBtn.textContent = '☰';
-            } else {
-                menuBtn.textContent = '✖';
-            }
-        });
-    });
+document.getElementById("menu-toggle").addEventListener("click", function () {
+    const menu = document.getElementById("menu");
+    menu.classList.toggle("hidden");
+    menu.classList.toggle("opacity-100");
+    menu.classList.toggle("translate-y-0");
+});

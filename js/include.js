@@ -1,26 +1,23 @@
-document.addEventListener('DOMContentLoaded', () => {
-    // Function to include HTML content
-    function includeHTML() {
-        const elements = document.querySelectorAll('[data-include]');
-        elements.forEach(el => {
-            const file = el.getAttribute('data-include');
-            if (file) {
-                fetch(file)
-                    .then(response => response.text())
-                    .then(data => {
-                        el.innerHTML = data;
-                        el.removeAttribute('data-include');
-                        includeHTML(); // Recursively call to handle nested includes
-                    })
-                    .then(() => {
-                        // Attach event listener after content is loaded
-                        document.getElementById('menu-toggle').addEventListener('click', () => {
-                            const menu = document.getElementById('menu');
-                            menu.classList.toggle('hidden');
-                        });
-                    });
-            }
-        });
+function includeHTML(callback) {
+    const elements = document.querySelectorAll("[data-include]"); // Busca elementos con 'data-include'
+    let remaining = elements.length;
+
+    if (remaining === 0) {
+        if (callback) callback(); // Si no hay elementos, ejecuta el callback de inmediato
+        return;
     }
-    includeHTML();
-});
+
+    elements.forEach(el => {
+        const file = el.getAttribute("data-include");
+        fetch(file)
+            .then(response => response.text())
+            .then(data => {
+                el.innerHTML = data;
+                el.removeAttribute("data-include"); // Limpia el atributo una vez cargado
+
+                remaining--; 
+                if (remaining === 0 && callback) callback(); // Ejecuta el callback cuando termine
+            })
+            .catch(error => console.error("Error cargando", file, error));
+    });
+}

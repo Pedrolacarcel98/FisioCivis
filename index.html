@@ -121,7 +121,13 @@
 
     <div data-include="footer.html"></div>
 
-    <script src="js/include.js"></script>
+
+    <script src="js/include.js" defer></script>
+<script>
+    includeHTML(() => {
+        console.log("Contenido HTML cargado.");
+    });
+</script>
     <script src="js/header.js" defer></script>
 </body>
 </html>

@@ -1,20 +1,18 @@
-// Autor: Pedro Lacárcel
-
-document.addEventListener("DOMContentLoaded", function () {
-  const menuToggle = document.getElementById("menu-toggle");
+document.getElementById("menu-toggle").addEventListener("click", function () {
   const menu = document.getElementById("menu");
 
-  if (menuToggle && menu) {
-    menuToggle.addEventListener("click", function () {
-      // Si el menú está oculto, lo mostramos con display flex en dirección columna (para móviles)
-      if (menu.classList.contains("hidden")) {
-        menu.classList.remove("hidden");
-        menu.classList.add("flex", "flex-col");
-      } else {
-        // De lo contrario, lo ocultamos
-        menu.classList.add("hidden");
-        menu.classList.remove("flex", "flex-col");
-      }
-    });
+  if (menu.classList.contains("hidden")) {
+      menu.classList.remove("hidden");
+      setTimeout(() => {
+          menu.classList.add("opacity-100", "scale-100");
+          menu.classList.remove("opacity-0", "scale-95");
+      }, 10);
+  } else {
+      menu.classList.add("opacity-0", "scale-95");
+      menu.classList.remove("opacity-100", "scale-100");
+
+      setTimeout(() => {
+          menu.classList.add("hidden");
+      }, 300);
   }
 });
