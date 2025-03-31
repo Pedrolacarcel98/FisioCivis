@@ -7,6 +7,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/fuentes.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.tailwindcss.com" rel="stylesheet">
+    <link rel="stylesheet" href="css/header.css">
     <meta name="description" content="Fisioterapia a domicilio en Sevilla con profesionales colegiados. Tratamientos personalizados de rehabilitación, masajes terapéuticos y osteopatía." />
     <meta name="keywords" content="Fisioterapia Sevilla, Fisioterapia a Domicilio, Rehabilitación, Masajes terapéuticos, Osteopatía Sevilla" />
     <meta name="author" content="FisioCivis" />
@@ -27,20 +29,39 @@
 </head>
 
 <body class="bg-white text-gray-900 custom-font">
-    <div data-include="header.html"></div>
+    <header>
+        <section>
+            <div data-include="header.html"></div>
 
-    <section class="bg-teal-100 border-l-4 border-teal-400 shadow-xl text-teal-400 text-center py-8 px-4 max-w-5xl mx-auto mt-8 mb-8">
+        </section>
+
+        
+    </header>
+
+
+    <h1 class="text-4xl font-bold text-center text-blue-900 mt-10">
+        Fisioterapia a Domicilio en             
+        <span class="text-teal-400"> Sevilla</span>
+
+    </h1>
+
+    <section class="bg-teal-100 border-l-4 border-teal-400 shadow-xl text-teal-400 text-center py-8 px-4 mx-4 sm:mx-6 md:mx-8 lg:mx-auto max-w-5xl mt-8 mb-8">
         <h1 class="text-3xl font-bold text-teal-400">
-            Fisioterapia a Domicilio en Sevilla - <span class="text-blue-900">Fisio<span class="text-teal-400">civis</span>    </span>
+            <span class="text-blue-900">Fisio<span class="text-teal-400">civis</span></span>
         </h1>
-        
-        
-        <h2 class="text-lg text-blue-900 mt-4">La nueva fisioterapia de <strong>máxima calidad</strong>, expertos en fisioterapia a <strong>domicilio en Sevilla</strong>, tu fisio de confianza en casa donde y cuando quieras</h2>
+    
+        <h2 class="text-lg text-blue-900 mt-4 mb-4">
+            La nueva fisioterapia de <strong>máxima calidad</strong>, expertos en fisioterapia a 
+            <strong>domicilio en Sevilla</strong>, tu fisio de confianza en casa donde y cuando quieras
+        </h2>
+    
         <a href="https://wa.me/+34671011632?text=Hola!%20Me%20gustaría%20pedir%20cita.%20Gracias!" 
-           class="mt-6 inline-block bg-blue-900 text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-teal-400 transition-transform transform hover:scale-110 duration-300">
+           class="reserva-boton inline-block bg-blue-900 text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-teal-400 transition-transform transform hover:scale-110 duration-300">
             Reserva tu cita ahora
         </a>
     </section>
+    
+    
     
     <div class="container mx-auto p-6 text-center">
         <section id="ofrecemos" class="mt-12">
@@ -117,17 +138,22 @@
                 </div>
             </div>
         </section>
+
+        <section class="text-white bg-teal-100 py-12 mt-12 text-center">
+            <h2 class="text-3xl text-blue-900 font-bold mb-4">¿Necesitas más información?</h2>
+            <p class="text-lg text-blue-900 mb-6">Si tienes alguna pregunta o necesitas más detalles sobre nuestros servicios, ¡no dudes en contactarnos!</p>
+            <a href="contacto.html" class="inline-block bg-blue-900 text-white px-8 py-4 text-xl font-semibold rounded-full hover:bg-teal-400 transition duration-300 transform hover:scale-105">
+                Contáctanos
+            </a>
+        </section>
     </div>
 
     <div data-include="footer.html"></div>
 
 
     <script src="js/include.js" defer></script>
-<script>
-    includeHTML(() => {
-        console.log("Contenido HTML cargado.");
-    });
-</script>
+
     <script src="js/header.js" defer></script>
+    
 </body>
 </html>

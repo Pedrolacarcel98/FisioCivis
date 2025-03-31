@@ -1,0 +1,139 @@
+/* General reset */
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+.reserva-boton {
+    position: relative; /* Asegura que el botón esté dentro de su contenedor */
+    z-index: 1; /* Envía el botón al fondo */
+}
+/* Estilo del nav */
+nav {
+    background: #ffffff; /* Fondo blanco */
+    height: 80px;
+    width: 100%;
+}
+
+/* Estilo del enlace del logo */
+.enlace {
+    position: absolute;
+    padding: 20px 50px;
+}
+
+.logo {
+    height: 60px;
+}
+
+/* Estilo del menú */
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: #0d9488; /* teal-600 */
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    transition: color 0.3s ease; /* Transición suave para el color */
+}
+
+/* Hover y activo */
+li a.active, li a:hover {
+    background: none; /* Sin fondo */
+    color: #2dd4bf; /* teal-400 */
+    transition: color 0.3s ease;
+}
+
+/* Botón de menú para dispositivos pequeños */
+.checkbtn {
+    font-size: 30px;
+    color: #0d9488; /* teal-600 */
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+/* Fondo de la sección */
+.header-section {
+    background: url(fondo.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: calc(100vh - 80px);
+    padding: 20px;
+    margin: 20px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 952px) {
+    .enlace {
+        padding-left: 20px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh; /* Que ocupe toda la pantalla */
+        background: #ffffff; /* Fondo blanco */
+        top: -100vh; /* Inicia fuera de la pantalla, arriba */
+        left: 0;
+        text-align: left;
+        transition: all 0.5s ease-in-out;
+        z-index: 999; /* Asegura que esté por encima del botón */
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    li a:hover, li a.active {
+        background: none; /* Sin fondo */
+        color: #2dd4bf; /* teal-400 */
+    }
+    #check:checked ~ ul {
+        top: 80px; /* Baja hasta la altura del navbar */
+    }
+    .checkbtn i::before {
+        content: "\f0c9"; /* Ícono de hamburguesa (Font Awesome) */
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+    }
+    
+    #check:checked + .checkbtn i::before {
+        content: "\f00d"; /* Ícono de X (Font Awesome) */
+    }
+    
+}
