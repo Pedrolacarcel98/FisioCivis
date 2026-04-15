@@ -1,0 +1,45 @@
+# Activa mod_rewrite
+RewriteEngine On
+
+############################################
+# 1) Canonicaliza esquema y host (HTTPS + www)
+############################################
+# Si no es https O no es www.fisiocivis.es -> redirige
+RewriteCond %{HTTPS} !=on [OR]
+RewriteCond %{HTTP_HOST} !^www\.fisiocivis\.es$ [NC]
+RewriteRule ^ https://www.fisiocivis.es%{REQUEST_URI} [R=301,L]
+
+############################################
+# Home única (redirige index.html e index/ a /)
+############################################
+RewriteRule ^index\.html$ / [R=301,L]
+RewriteRule ^index/$ / [R=301,L]
+
+
+############################################
+# 3) Quitar .html de la URL pública (vía redirección)
+#    Sólo cuando el usuario pide explícitamente .html
+############################################
+RewriteCond %{THE_REQUEST} \s/([^\s?]+)\.html[\s?] [NC]
+RewriteRule ^ %1/ [R=301,L]
+
+############################################
+# 4) Forzar barra final en URLs "limpias"
+#    (no ficheros, no directorios, y sin extensión)
+############################################
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !\.[A-Za-z0-9]{1,5}$
+RewriteRule ^(.+[^/])$ https://www.fisiocivis.es/$1/ [R=301,L]
+
+############################################
+# 5) Reescritura interna de URLs limpias -> .html
+#    (sin redirección visible)
+############################################
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.+?)/$ $1.html [L]
+
+# Página por defecto
+DirectoryIndex index.html

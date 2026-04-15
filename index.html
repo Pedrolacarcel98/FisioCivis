@@ -1,159 +1,333 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fisioterapia a Domicilio en Sevilla | FisioCivis</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="css/fuentes.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <link href="https://cdn.tailwindcss.com" rel="stylesheet">
-    <link rel="stylesheet" href="css/header.css">
-    <meta name="description" content="Fisioterapia a domicilio en Sevilla con profesionales colegiados. Tratamientos personalizados de rehabilitación, masajes terapéuticos y osteopatía." />
-    <meta name="keywords" content="Fisioterapia Sevilla, Fisioterapia a Domicilio, Rehabilitación, Masajes terapéuticos, Osteopatía Sevilla" />
-    <meta name="author" content="FisioCivis" />
+  <meta charset="utf-8" />
 
-    <!-- Open Graph para compartir en Facebook, WhatsApp -->
-    <meta property="og:title" content="Fisioterapia a Domicilio en Sevilla | FisioCivis">
-    <meta property="og:description" content="Fisioterapia en Sevilla con profesionales colegiados. Reserva tu sesión a domicilio.">
-    <meta property="og:image" content="images/Fisiocivis.png">
-    <meta property="og:url" content="https://fisiocivis.es">
-    <meta property="og:type" content="website">
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-K86ZMG8J');</script>
 
-    <!-- Twitter Card para compartir en Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Fisioterapia a Domicilio en Sevilla | FisioCivis">
-    <meta name="twitter:description" content="Fisioterapia en Sevilla con profesionales colegiados. Reserva tu sesión a domicilio.">
-    <meta name="twitter:image" content="images/icons/fisioterapia-twitter.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fisiocivis – Fisioterapia a domicilio en Sevilla</title>
 
+      
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://www.fisiocivis.es/" />
+
+  <!-- CSS propios -->
+  <link href="/css/tailwind.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/fuentes.css" />
+  <link rel="stylesheet" href="/css/header.css" />
+
+  <!-- Favicon (uno solo) -->
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Fuentes -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="Fisiocivis" />
+  <meta property="og:title" content="Fisiocivis – Fisioterapia a domicilio en Sevilla" />
+  <meta property="og:description" content="Fisiocivis, fisioterapia en Sevilla con profesionales colegiados. Reserva tu sesión a domicilio." />
+  <meta property="og:image" content="https://www.fisiocivis.es/images/Fisiocivis.jpg" />
+  <meta property="og:url" content="https://www.fisiocivis.es/" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@Fisiocivis" />
+  <meta name="twitter:title" content="Fisiocivis – Fisioterapia a domicilio en Sevilla" />
+  <meta name="twitter:description" content="Fisiocivis, fisioterapia en Sevilla con profesionales colegiados. Reserva tu sesión a domicilio." />
+  <meta name="twitter:image" content="https://www.fisiocivis.es/images/icons/fisioterapia-twitter.jpg" />
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "name": "Fisiocivis",
+        "url": "https://www.fisiocivis.es/",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.fisiocivis.es/?s={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "Organization",
+        "name": "Fisiocivis",
+        "url": "https://www.fisiocivis.es/",
+        "logo": "https://www.fisiocivis.es/images/Fisiocivis.jpg"
+      },
+      {
+        "@type": "Physiotherapy",
+        "name": "Fisiocivis",
+        "image": "https://www.fisiocivis.es/images/Fisiocivis.jpg",
+        "url": "https://www.fisiocivis.es/",
+        "telephone": "+34 623 436 145",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Sevilla",
+          "addressCountry": "ES"
+        },
+        "areaServed": "Sevilla",
+        "description": "Fisioterapia a domicilio en Sevilla por fisioterapeutas colegiados. Tratamientos personalizados de rehabilitación, masajes terapéuticos y osteopatía."
+      }
+    ]
+  }
+  </script>
 </head>
 
-<body class="bg-white text-gray-900 custom-font">
-    <header>
-        <section>
-            <div data-include="header.html"></div>
 
-        </section>
+<body class="relative bg-white text-gray-900 custom-font pt-28">
 
-        
-    </header>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K86ZMG8J" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-
-    <h1 class="text-4xl font-bold text-center text-blue-900 mt-10">
-        Fisioterapia a Domicilio en             
-        <span class="text-teal-400"> Sevilla</span>
-
-    </h1>
-
-    <section class="bg-teal-100 border-l-4 border-teal-400 shadow-xl text-teal-400 text-center py-8 px-4 mx-4 sm:mx-6 md:mx-8 lg:mx-auto max-w-5xl mt-8 mb-8">
-        <h1 class="text-3xl font-bold text-teal-400">
-            <span class="text-blue-900">Fisio<span class="text-teal-400">civis</span></span>
-        </h1>
-    
-        <h2 class="text-lg text-blue-900 mt-4 mb-4">
-            La nueva fisioterapia de <strong>máxima calidad</strong>, expertos en fisioterapia a 
-            <strong>domicilio en Sevilla</strong>, tu fisio de confianza en casa donde y cuando quieras
-        </h2>
-    
-        <a href="https://wa.me/+34671011632?text=Hola!%20Me%20gustaría%20pedir%20cita.%20Gracias!" 
-           class="reserva-boton inline-block bg-blue-900 text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-teal-400 transition-transform transform hover:scale-110 duration-300">
-            Reserva tu cita ahora
-        </a>
+  <header class="fixed top-0 left-0 w-full z-50 bg-white shadow-md">
+    <section>
+            <div data-include="/partials/header.html"></div>
     </section>
-    
-    
-    
-    <div class="container mx-auto p-6 text-center">
-        <section id="ofrecemos" class="mt-12">
-            <h2 class="text-5xl font-semibold text-blue-900">¿Que ofrecemos?</h2>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
-                
-                <div class="bg-white p-6 rounded-lg">
-                    <img src="images/icons/fisioterapia-domicilio-tick.png" alt="Fisioterapia Respiratoria en Sevilla" class="w-16 h-16 mx-auto mb-3">
-                    <h3 class="text-xl font-semibold text-teal-400">Experiencia</h3>
-                    <p class="text-gray-600 mt-2">Somos fisioterapeutas colegiados con años de experiencia a domicilio.</p>
-                </div>
-    
-                <div class="bg-white p-6 rounded-lg">
-                    <img src="images/icons/fisioterapia-domicilio-hamaca.png" alt="Fisioterapia Geriátrica en Sevilla" class="w-16 h-16 mx-auto mb-3">
-                    <h3 class="text-xl font-semibold text-teal-400">Facilidad</h3>
-                    <p class="text-gray-600 mt-2">Aportamos todo el material necesario. Llevamos incluso camilla portátil.</p>
-                </div>
-    
-                <div class="bg-white p-6 rounded-lg">
-                    <img src="images/icons/fisioterapia-domicilio-reloj.png" alt="Fisioterapia Traumatológica en Sevilla" class="w-16 h-16 mx-auto mb-3">
-                    <h3 class="text-xl font-semibold text-teal-400">Flexibilidad</h3>
-                    <p class="text-gray-600 mt-2">Nos adaptamos a tu agenda y horarios.</p>
-                </div>
-            </div>
-        </section>
+  </header>
 
-        <section id="servicios" class="mt-12">
-            <h2 class="text-5xl font-semibold text-blue-900">Nuestros Servicios de Fisioterapia</h2>
-            <p class="mt-2 text-gray-600">Ofrecemos tratamientos personalizados en <strong>fisioterapia a domicilio en Sevilla</strong> para aliviar el dolor y mejorar tu movilidad. <a href="servicios.html" class="text-blue-900 font-semibold hover:underline">Ver servicios</a>.</p>
-            
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mt-6">
-                <div class="bg-white p-6 rounded-lg">
-                    <img src="images/icons/fisioterapia-cerebro.png" alt="Fisioterapia Neurológica en Sevilla" class="w-16 h-16 mx-auto mb-3">
-                    <h3 class="text-xl font-semibold text-teal-400">Fisioterapia Neurológica</h3>
-                    <p class="text-gray-600 mt-2">Tratamientos especializados para mejorar tu movilidad y calidad de vida.</p>
-                </div>
-                
-                <div class="bg-white p-6 rounded-lg">
-                    <img src="images/icons/fisioterapia-respiratoria.png" alt="Fisioterapia Respiratoria en Sevilla" class="w-16 h-16 mx-auto mb-3">
-                    <h3 class="text-xl font-semibold text-teal-400">Fisioterapia Respiratoria</h3>
-                    <p class="text-gray-600 mt-2">Mejoramos la función pulmonar con tratamientos personalizados.</p>
-                </div>
+  <h1 class="text-4xl font-bold text-center text-blue-900 mt-10" data-aos="fade-up">
+    Fisioterapeuta a Domicilio en
+    <span class="text-teal-400"> Sevilla</span>
+  </h1>
 
-                <div class="bg-white p-6 rounded-lg">
-                    <img src="images/icons/fisioterapia-anciano.png" alt="Fisioterapia Geriátrica en Sevilla" class="w-16 h-16 mx-auto mb-3">
-                    <h3 class="text-xl font-semibold text-teal-400">Fisioterapia Geriátrica</h3>
-                    <p class="text-gray-600 mt-2">Atención especializada para nuestros mayores.</p>
-                </div>
+  <section data-aos="fade-up"
+    class="relative bg-[url('../images/services-fisioterapia/fisio-index.jpg')] bg-cover bg-center bg-fixed text-teal-400 text-center py-8 px-4 mx-4 sm:mx-6 md:mx-8 lg:mx-auto max-w-5xl mt-8 mb-8 rounded-xl shadow-xl">
 
-                <div class="bg-white p-6 rounded-lg">
-                    <img src="images/icons/fisioterapia-hueso.png" alt="Fisioterapia Traumatológica en Sevilla" class="w-16 h-16 mx-auto mb-3">
-                    <h3 class="text-xl font-semibold text-teal-400">Fisioterapia Traumatológica</h3>
-                    <p class="text-gray-600 mt-2">Rehabilitación para lesiones musculoesqueléticas.</p>
-                </div>
-            </div>
-        </section>
+    <div class="bg-white bg-opacity-50 backdrop-blur-sm p-6 rounded-xl">
+      <h2 class="text-3xl font-bold">
+        <span class="text-blue-900">Bienvenido a Fisio<span class="text-teal-400">civis</span></span>
+      </h2>
 
-        <section id="precios" class="max-w-3xl p-5 mx-auto mt-12">
-            <h2 class="text-5xl font-semibold text-blue-900">Precios de Fisioterapia a Domicilio</h2>
-            <p class="mt-2 text-gray-600">Sesiones realizadas por fisioterapeutas colegiados a precios accesibles en Sevilla.</p>
-            <div class="mt-6 bg-teal-400 text-teal-400 p-6 rounded-lg shadow-lg">
-                <h3 class="text-3xl text-blue-900 font-semibold">Primera sesión: </h3>
-                <h3 class="text-white text-6xl font-extrabold">45€</h3>
-                <p class="mt-2 text-blue-900 text-lg">Consultas de 50 minutos.</p>
-                <div class="flex justify-center mt-6">
-                    <a href="precios.html" class="flex items-center text-center text-2xl font-semibold text-white bg-blue-900 py-3 px-6 rounded-lg hover:bg-white hover:text-blue-900 transition duration-300 transform hover:scale-110">
-                        <span class="mr-2">Ver Tarifas</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 ml-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M5 12h14"></path>
-                            <path d="M12 5l7 7-7 7"></path>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-        </section>
+      <h2 class="text-lg text-blue-900 mt-4 mb-4">
+        La nueva fisioterapia de <strong>máxima calidad</strong>, expertos en fisioterapia a
+        <strong>domicilio en Sevilla</strong>, tu fisio de confianza en casa, donde y cuando quieras
+      </h2>
 
-        <section class="text-white bg-teal-100 py-12 mt-12 text-center">
-            <h2 class="text-3xl text-blue-900 font-bold mb-4">¿Necesitas más información?</h2>
-            <p class="text-lg text-blue-900 mb-6">Si tienes alguna pregunta o necesitas más detalles sobre nuestros servicios, ¡no dudes en contactarnos!</p>
-            <a href="contacto.html" class="inline-block bg-blue-900 text-white px-8 py-4 text-xl font-semibold rounded-full hover:bg-teal-400 transition duration-300 transform hover:scale-105">
-                Contáctanos
-            </a>
-        </section>
+      <a href="https://api.whatsapp.com/send?phone=34623436145&text=Hola!%20Me%20gustaría%20pedir%20cita.%20Gracias!"
+        class="reserva-boton inline-block bg-blue-900 text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-teal-400 transition-transform transform hover:scale-110 duration-300 mt-4">
+        Reserva tu cita ahora
+      </a>
+    </div>
+  </section>
+
+
+  <div class="container mx-auto p-6 text-center">
+
+    <!-- Qué ofrecemos -->
+    <section id="ofrecemos" class="mt-12" data-aos="fade-up">
+      <h2 class="text-5xl font-semibold text-blue-900">¿Qué ofrecemos?</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+
+
+
+        <!-- Experiencia -->
+        <div class="bg-white p-6 rounded-lg">
+          <picture>
+            <source srcset="/images/icons/fisioterapia-sevilla-tick.webp" type="image/webp">
+            <img src="/images/icons/fisioterapia-sevilla-tick.webp" alt="Fisioterapeutas colegiados"
+              class="w-16 h-16 mx-auto mb-3" loading="lazy">
+          </picture>
+          <h3 class="text-xl font-semibold text-teal-400">Experiencia</h3>
+          <p class="text-gray-600 mt-2">Somos fisioterapeutas colegiados con años de experiencia a domicilio.</p>
+        </div>
+
+
+        <!-- Facilidad -->
+        <div class="bg-white p-6 rounded-lg">
+          <img src="/images/icons/fisioterapia-sevilla-hamaca.webp" alt="Material incluido"
+            class="w-16 h-16 mx-auto mb-3">
+          <h3 class="text-xl font-semibold text-teal-400">Facilidad</h3>
+          <p class="text-gray-600 mt-2">Aportamos todo el material necesario. Llevamos incluso camilla portátil.</p>
+        </div>
+
+
+        <!-- Flexibilidad -->
+        <div class="bg-white p-6 rounded-lg">
+          <img src="/images/icons/fisioterapia-domicilio-reloj.webp" alt="Flexibilidad horaria"
+            class="w-16 h-16 mx-auto mb-3">
+          <h3 class="text-xl font-semibold text-teal-400">Flexibilidad</h3>
+          <p class="text-gray-600 mt-2">Nos adaptamos a tu agenda y horarios.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="mt-12" data-aos="fade-up">
+      <h2 class="text-5xl font-semibold text-blue-900">Nuestros Servicios de Fisioterapia</h2>
+      <h3 class="mt-2 text-gray-600">
+        Ofrecemos tratamientos personalizados en <strong>fisioterapia a domicilio en Sevilla</strong> para
+        aliviar el
+        dolor y mejorar tu movilidad.
+        <a href="/fisioterapeuta-servicios-sevilla/" class="text-blue-900 font-semibold hover:underline">Ver
+          servicios</a>.
+      </h3>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-6 mt-6">
+        <!-- Tarjetas de servicios -->
+        <a href="/fisioterapeuta-neurologica-domicilio-sevilla/"
+          class="bg-white p-6 rounded-lg hover:shadow-lg block text-center">
+          <picture>
+            <source srcset="/images/icons/fisioterapia-cerebro.webp" type="image/webp">
+            <img src="/images/icons/fisioterapia-cerebro.jpg" alt="Fisioterapia neurológica"
+              class="w-20 sm:w-16 mx-auto mb-3" loading="lazy">
+          </picture>
+          <h3 class="text-lg font-semibold text-teal-400">Fisioterapia Neurológica</h3>
+        </a>
+
+        <a href="/fisioterapeuta-geriatrica-domicilio-sevilla/"
+          class="bg-white p-6 rounded-lg hover:shadow-lg block text-center">
+          <picture>
+            <source srcset="/images/icons/fisioterapia-anciano.webp" type="image/webp">
+            <img src="/images/icons/fisioterapia-anciano.jpg" alt="Fisioterapia Geriátrica"
+              class="w-20 sm:w-16 mx-auto mb-3" loading="lazy">
+          </picture>
+          <h3 class="text-lg font-semibold text-teal-400">Fisioterapia Geriátrica</h3>
+        </a>
+
+        <a href="/fisioterapeuta-traumatologica-domicilio-sevilla/"
+          class="bg-white p-6 rounded-lg hover:shadow-lg block text-center">
+          <picture>
+            <source srcset="/images/icons/fisioterapia-hueso.webp" type="image/webp">
+            <img src="/images/icons/fisioterapia-hueso.jpg" alt="Fisioterapia Traumatológica"
+              class="w-20 sm:w-16 mx-auto mb-3" loading="lazy">
+          </picture>
+          <h3 class="text-lg font-semibold text-teal-400">Fisioterapia Traumatológica</h3>
+        </a>
+
+        <a href="/fisioterapeuta-vascular-domicilio-sevilla/"
+          class="bg-white p-6 rounded-lg hover:shadow-lg block text-center">
+          <picture>
+            <source srcset="/images/icons/fisioterapia-sevilla-cardio.webp" type="image/webp">
+            <img src="/images/icons/fisioterapia-sevilla-cardio.jpg" alt="Fisioterapia Vascular"
+              class="w-20 sm:w-16 mx-auto mb-3" loading="lazy">
+          </picture>
+          <h3 class="text-lg font-semibold text-teal-400">Fisioterapia Vascular</h3>
+        </a>
+
+        <a href="/fisioterapeuta-atm-domicilio-sevilla/"
+          class="bg-white p-6 rounded-lg hover:shadow-lg block text-center">
+          <picture>
+            <source srcset="/images/icons/fisioterapia-atm.webp" type="image/webp">
+            <img src="/images/icons/fisioterapia-atm.jpg" alt="Fisioterapia ATM" class="w-20 sm:w-16 mx-auto mb-3"
+              loading="lazy">
+          </picture>
+          <h3 class="text-lg font-semibold text-teal-400">Fisioterapia ATM</h3>
+        </a>
+
+        <a href="/fisioterapeuta-deportiva-domicilio-sevilla/"
+          class="bg-white p-6 rounded-lg hover:shadow-lg block text-center">
+          <picture>
+            <source srcset="/images/icons/fisioterapia-deportiva.webp" type="image/webp">
+            <img src="/images/icons/fisioterapia-deportiva.jpg" alt="Fisioterapia Deportiva"
+              class="w-20 sm:w-16 mx-auto mb-3" loading="lazy">
+          </picture>
+          <h3 class="text-lg font-semibold text-teal-400">Fisioterapia Deportiva</h3>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- Precios -->
+    <section id="precios" class="max-w-3xl p-5 mx-auto mt-12" data-aos="zoom-in">
+      <h2 class="text-5xl font-semibold text-blue-900">Precios de Fisioterapia a Domicilio</h2>
+      <h3 class="mt-2 text-gray-600">Sesiones realizadas por fisioterapeutas colegiados a precios accesibles en Sevilla.
+      </h3>
+      <div class="mt-6 bg-teal-400 text-teal-400 p-6 rounded-lg shadow-lg">
+        <h3 class="text-3xl text-blue-900 font-semibold">Primera sesión: </h3>
+        <h3 class="text-white text-6xl font-extrabold">45€</h3>
+        <p class="mt-2 text-blue-900 text-lg">Consultas de 50 minutos.</p>
+        <div class="flex justify-center mt-6">
+          <a href="/precios-fisioterapeuta-sevilla/"
+            class="flex items-center text-2xl font-semibold text-white bg-blue-900 py-3 px-6 rounded-lg hover:bg-white hover:text-blue-900 transition duration-300 transform hover:scale-110">
+            <span class="mr-2">Ver Tarifas</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 ml-2" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14"></path>
+              <path d="M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section data-aos="fade-up"
+      class="relative bg-[url('../images/services-fisioterapia/contactanos.webp')] bg-cover bg-center bg-fixed text-center py-8 px-4 mx-4 sm:mx-6 md:mx-8 lg:mx-auto max-w-5xl mt-8 mb-8 rounded-xl shadow-xl overflow-hidden">
+      <div class="absolute inset-0 bg-black bg-opacity-50 rounded-xl"></div>
+
+      <!-- Contenido -->
+      <div class="relative z-10">
+        <h2 class="text-3xl text-white font-bold mb-4">¿Necesitas más información?</h2>
+        <h3 class="text-lg text-white mb-6">
+          Si tienes alguna pregunta o necesitas más detalles sobre nuestros servicios, ¡no dudes en contactarnos!
+        </h3>
+        <a href="/contacto/"
+          class="inline-block bg-blue-900 text-white px-8 py-4 text-xl font-semibold rounded-full hover:bg-teal-400 transition duration-300 transform hover:scale-105">
+          Contáctanos
+        </a>
+      </div>
+    </section>
+
+
+    <!-- Banner de Cookies -->
+    <div id="cookie-banner"
+      class="fixed bottom-0 inset-x-0 bg-teal-100 shadow-lg p-4 z-50 flex flex-col md:flex-row items-center justify-between gap-4 border-t border-gray-200">
+      <div class="text-center md:text-left text-sm text-gray-700">
+        Usamos cookies para mejorar tu experiencia. <a href="/politica-cookies/"
+          class="underline text-blue-600 hover:text-blue-800">Leer más</a>
+      </div>
+      <div class="flex gap-2 justify-center">
+        <button onclick="aceptarCookies()"
+          class="bg-teal-400 hover:bg-green-700 text-white text-sm px-4 py-2 rounded-lg transition">
+          Aceptar
+        </button>
+        <button onclick="rechazarCookies()"
+          class="bg-gray-300 hover:bg-gray-400 text-gray-800 text-sm px-4 py-2 rounded-lg transition">
+          Rechazar
+        </button>
+      </div>
     </div>
 
-    <div data-include="footer.html"></div>
+    <script>
+      function aceptarCookies() {
+        localStorage.setItem('cookies_aceptadas', 'true');
+        document.getElementById('cookie-banner').style.display = 'none';
+      }
 
+      function rechazarCookies() {
+        localStorage.setItem('cookies_aceptadas', 'false');
+        document.getElementById('cookie-banner').style.display = 'none';
+      }
 
-    <script src="js/include.js" defer></script>
+      window.onload = function () {
+        if (localStorage.getItem('cookies_aceptadas') !== null) {
+          document.getElementById('cookie-banner').style.display = 'none';
+        }
+      };
+    </script>
 
-    <script src="js/header.js" defer></script>
-    
+  </div>
+
+    <div data-include="/partials/footer.html"></div>
+
+  <script src="/js/include.js" defer></script>
+  <script src="/js/header.js" defer></script>
+  <script>
+    AOS.init({
+      duration: 600,
+      once: false,
+      mirror: true
+    });
+  </script>
 </body>
+
 </html>

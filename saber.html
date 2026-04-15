@@ -1,52 +1,121 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
+   
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-K86ZMG8J');</script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saber Más - Fisioterapia</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/header.css">
 
-    <script src="js/include.js"></script>
+        
+
+    <link href="/css/tailwind.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+<link rel="canonical" href="https://www.fisiocivis.es/saber/" />
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <script src="/js/include.js"></script>
     <style>
         body {
             font-family: 'Poppins', sans-serif;
         }
     </style>
 </head>
+
 <body class="bg-white text-gray-900">
-    
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K86ZMG8J" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- Header -->
-    <div data-include="header.html"></div>
-    
+            <div data-include="/partials/header.html"></div>
+
     <!-- Main Content -->
     <main class="container mx-auto p-8">
-        <h2 class="text-5xl font-bold text-center text-cyan-500 mb-6">
-            Saber más <span class="text-blue-950">sobre nosotros</span>
+        <h2 data-aos="fade-up" class="text-5xl font-bold text-center text-teal-400 mb-6">
+            Saber más <span class="text-blue-900">sobre nosotros</span>
         </h2>
 
-        <section class="bg-white p-6 rounded-lg  mb-8">
-            <h1 class="text-3xl font-bold text-cyan-500 mb-4">¿Quiénes Somos?</h1>
-            <p class="mb-4 text-lg">
-                <span class="text-blue-950 font-semibold">Fisio<span class="text-cyan-500 font-semibold">civis</span></span> es un proyecto creado por fisioterapeutas colegiados en el
-                <span class="text-cyan-500 font-semibold">ICPFA</span>, con años de experiencia tanto en fisioterapia clínica como a domicilio.
-            </p>
-            <p class="mb-4 text-lg">
-                Nuestro objetivo es ofrecer un servicio de <span class="text-cyan-500 font-semibold">fisioterapia de máxima calidad a domicilio</span>
-                en Sevilla y alrededores, brindándote todas las facilidades posibles y un tratamiento
-                <span class="text-blue-950 font-semibold">individualizado</span> adaptado a ti y a tu patología.
-            </p>
-            <p class="text-lg">Si tienes cualquier duda o consulta, <span class="text-green-600 font-semibold"> <a href="contacto.html">¡contáctanos!</a></span></p>
+        <section data-aos="fade-up" class="bg-white p-6 rounded-lg mb-8">
+            <h1 class="text-3xl font-bold text-teal-400 mb-4">¿Quiénes Somos?</h1>
+
+            <div class="flex flex-col lg:flex-row items-center lg:items-start gap-6">
+                <!-- Texto -->
+                <div class="lg:w-2/3" data-aos="fade-right">
+                    <p class="mb-4 text-lg">
+                        <span class="text-blue-900 font-semibold">Fisio<span
+                                class="text-teal-400 font-semibold">civis</span></span> es mucho más que un servicio de
+                        fisioterapia a domicilio: es un proyecto con alma, creado por dos fisioterapeutas, colegiados en
+                        el <span class="text-teal-400 font-semibold">ICPFA</span>, con años de experiencia tanto en
+                        clínica como en atención domiciliaria.
+                    </p>
+                    <p class="mb-4 text-lg">
+                        Nos une una misma filosofía: ofrecer una <span class="text-teal-400 font-semibold">fisioterapia
+                            de máxima calidad</span>, personalizada, humana y cercana. Sabemos que cada persona y cada
+                        patología es única, por eso diseñamos tratamientos adaptados a ti, con tiempo, escucha activa y
+                        dedicación. Sin prisas y sin protocolos genéricos.
+                    </p>
+                    <p class="mb-4 text-lg">
+                        En <span class="text-blue-900 font-semibold">Fisiocivis</span> llevamos la consulta a tu casa,
+                        con todo el material necesario, incluida camilla portátil, para que no tengas que preocuparte de
+                        nada. Queremos que te sientas acompañado, cómodo y en manos de profesionales comprometidos con
+                        tu bienestar.
+                    </p>
+                    <p class="text-lg">
+                        Si tienes cualquier duda o consulta, <span class="text-green-600 font-semibold"><a
+                                href="/contacto/">¡contáctanos!</a></span>
+                    </p>
+                </div>
+
+                <!-- Imagen -->
+                <div class="lg:w-1/3" data-aos="fade-left">
+                    <picture>
+                        <source srcset="/images/services-fisioterapia/conocenos.webp" type="image/webp">
+                        <img src="/images/services-fisioterapia/conocenos.jpg"
+                            alt="Fisioterapia a domicilio en Sevilla - Carlos y Jero"
+                            class="rounded-lg w-full max-w-sm mx-auto lg:mx-0" loading="lazy">
+                    </picture>
+                </div>
+            </div>
         </section>
 
+        <!-- Contacto -->
+        <section data-aos="fade-up"
+            class="relative bg-[url('../images/services-fisioterapia/contactanos.webp')] bg-cover bg-center bg-fixed text-center py-8 px-4 mx-4 sm:mx-6 md:mx-8 lg:mx-auto max-w-5xl mt-8 mb-8 rounded-xl shadow-xl overflow-hidden">
+            <div class="absolute inset-0 bg-black bg-opacity-50 rounded-xl"></div>
 
+            <!-- Contenido -->
+            <div class="relative z-10">
+                <h2 class="text-3xl text-white font-bold mb-4">¿Necesitas más información?</h2>
+                <h3 class="text-lg text-white mb-6">
+                    Si tienes alguna pregunta o necesitas más detalles sobre nuestros servicios, ¡no dudes en
+                    contactarnos!
+                </h3>
+                <a href="/contacto/"
+                    class="inline-block bg-blue-900 text-white px-8 py-4 text-xl font-semibold rounded-full hover:bg-teal-400 transition duration-300 transform hover:scale-105">
+                    Contáctanos
+                </a>
+            </div>
+        </section>
     </main>
 
-
     <!-- Footer -->
-    <div data-include="footer.html"></div>
+    <div data-include="/partials/footer.html"></div>
 
-    <script src="js/include.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 600,
+            once: false,
+            mirror: true
+        });
+    </script>
+
+    <script src="/js/include.js"></script>
 </body>
+
 </html>

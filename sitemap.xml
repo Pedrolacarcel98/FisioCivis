@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xhtml="https://www.w3.org/1999/xhtml">
+
+  <!-- Página principal -->
+  <url>
+    <loc>https://www.fisiocivis.es/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Páginas legales y de cookies -->
+  <url>
+    <loc>https://www.fisiocivis.es/aviso-legal/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.fisiocivis.es/privacidad/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.fisiocivis.es/politica-cookies/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Contacto -->
+  <url>
+    <loc>https://www.fisiocivis.es/contacto/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Servicios generales -->
+  <url>
+    <loc>https://www.fisiocivis.es/fisioterapeuta-servicios-sevilla/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Servicios específicos -->
+  <url>
+    <loc>https://www.fisiocivis.es/fisioterapeuta-neurologica-domicilio-sevilla/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.fisiocivis.es/fisioterapeuta-geriatrica-domicilio-sevilla/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.fisiocivis.es/fisioterapeuta-traumatologica-domicilio-sevilla/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.fisiocivis.es/fisioterapeuta-vascular-domicilio-sevilla/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.fisiocivis.es/fisioterapeuta-atm-domicilio-sevilla/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.fisiocivis.es/fisioterapeuta-deportiva-domicilio-sevilla/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Precios -->
+  <url>
+    <loc>https://www.fisiocivis.es/precios-fisioterapeuta-sevilla/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Otras páginas -->
+  <url>
+    <loc>https://www.fisiocivis.es/saber/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+</urlset>

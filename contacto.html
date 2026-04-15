@@ -1,12 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
+        
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-K86ZMG8J');</script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto - Fisioterapia</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Contacta con FisioCivis - Fisioterapeuta a Domicilio en Sevilla</title>
+
+    <meta name="description"
+        content="Reserva tu sesión de fisioterapeuta a domicilio en Sevilla o solicita más información sin compromiso.">
+
+    <link href="/css/tailwind.css" rel="stylesheet">
+<link rel="canonical" href="https://www.fisiocivis.es/contacto/" />
+
+    <!-- ANIMACIONES AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
 
     <style>
         .custom-font {
@@ -14,51 +29,160 @@
         }
     </style>
 </head>
-<body class="bg-white to-blue-900 text-gray-900 custom-font">
-    <header data-include="header.html"></header>
+
+<body class="bg-white to-blue-900 text-gray-900 custom-font pt-28">
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K86ZMG8J" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <header class="fixed top-0 left-0 w-full z-50 bg-white shadow-md">
+        <section>
+            <div data-include="/partials/header.html"></div>
+        </section>
+    </header>
 
     <main class="p-8">
-        <h2 class="text-5xl font-bold text-center text-teal-400 mb-4">
-            Contacta  <span class="text-blue-900">con nosotros</span>
-        </h2>
+        <h1 class="text-5xl font-bold text-center text-teal-400 mb-4" data-aos="fade-down">
+            Contacto - FisioCivis en Sevilla </h1>
 
-        <h2 class="text-2xl font-bold text-center text-blue-900 mb-4">
+        <h2 class="text-2xl font-bold text-center text-blue-900 mb-4" data-aos="fade-down">
             ¿Necesitas <span class="text-teal-400">información?</span>
         </h2>
 
-        <p class="text-center text-lg mb-8">
+        <p class="text-center text-lg mb-8" data-aos="fade-down">
             Si tienes alguna duda o necesitas más información sobre nuestros servicios:
         </p>
 
         <section class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
-            <!-- Tarjeta Teléfono -->
-            <div class="bg-blue-900 p-6 rounded-lg shadow-md flex flex-col items-center space-y-4 transition transform hover:scale-105 hover:shadow-xl duration-300 animate-fade-up">
-                <img src="images/icons/whatsapp-cyan.png" alt="WhatsApp" class="w-12 h-12">
-                <h3 class="text-xl font-semibold text-white">WhatsApp</h3>
-                <a href="https://wa.me/+34671011632?text=Hola!%20me%20gustaría%20pedir%20cita.%20Gracias!" class="text-lg text-white hover:text-teal-400 transition duration-300">
-                    Enviar mensaje
+            <!-- WhatsApp -->
+            <a href="https://wa.me/+34623436145?text=Hola!%20me%20gustaría%20pedir%20cita.%20Gracias!" class="block"
+                data-aos="fade-up">
+                <div
+                    class="bg-teal-400 p-6 rounded-lg shadow-md flex flex-col items-center space-y-4 transition transform hover:scale-105 hover:shadow-xl duration-300">
+                    <picture>
+                        <source srcset="/images/icons/whatsapp-blue-900.webp" type="image/webp">
+                        <img src="/images/icons/whatsapp-blue-900.png" alt="WhatsApp fisioterapia a domicilio Sevilla"
+                            class="w-16 h-16" loading="lazy">
+                    </picture>
+                    <h3 class="text-xl font-semibold text-white">WhatsApp</h3>
+                    <p class="text-lg text-blue-900 hover:text-white transition duration-300">Enviar mensaje</p>
+                </div>
+            </a>
+
+            <!-- Teléfono -->
+            <a href="tel:+34623436145" class="block" data-aos="fade-up">
+                <div
+                    class="bg-teal-400 p-6 rounded-lg shadow-md flex flex-col items-center space-y-4 transition transform hover:scale-105 hover:shadow-xl duration-300">
+                    <picture>
+                        <source srcset="/images/icons/tlf-blue-900-def.webp" type="image/webp">
+                        <img src="/images/icons/tlf-blue-900-def.png" alt="Teléfono fisioterapia a domicilio Sevilla"
+                            class="w-16 h-16" loading="lazy">
+                    </picture>
+                    <h3 class="text-xl font-semibold text-white">Llámanos</h3>
+                    <p class="text-lg text-blue-900 hover:text-white transition duration-300">623 436 145</p>
+                </div>
+            </a>
+
+            <!-- Correo -->
+            <a href="mailto:fisiocivis@gmail.com" class="block" data-aos="fade-up">
+                <div
+                    class="bg-teal-400 p-6 rounded-lg shadow-md flex flex-col items-center space-y-4 transition transform hover:scale-105 hover:shadow-xl duration-300">
+                    <picture>
+                        <source srcset="/images/icons/correo-blue-900.webp" type="image/webp">
+                        <img src="/images/icons/correo-blue-900.png" alt="Correo electrónico fisioterapia Sevilla"
+                            class="w-16 h-16" loading="lazy">
+                    </picture>
+                    <h3 class="text-xl font-semibold text-white">Correo Electrónico</h3>
+                    <p class="text-lg text-blue-900 hover:text-white transition duration-300">fisiocivis@gmail.com</p>
+                </div>
+            </a>
+        </section>
+
+        <!-- Servicios -->
+        <section id="servicios" class="mt-12" data-aos="fade-up">
+            <h2 class="text-5xl font-semibold text-blue-900">Nuestros Servicios de Fisioterapia</h2>
+            <h3 class="mt-2 text-gray-600">
+                Ofrecemos tratamientos personalizados en <strong>fisioterapia a domicilio en Sevilla</strong> para
+                aliviar elS
+                dolor y mejorar tu movilidad.
+                <a href="/fisioterapeuta-servicios-sevilla/" class="text-blue-900 font-semibold hover:underline">Ver
+                    servicios</a>.
+            </h3>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-6 mt-6">
+                <!-- Tarjetas de servicios -->
+                <a href="/fisioterapeuta-neurologica-domicilio-sevilla/"
+                    class="bg-white p-6 rounded-lg hover:shadow-lg block text-center">
+                    <picture>
+                        <source srcset="/images/icons/fisioterapia-cerebro.webp" type="image/webp">
+                        <img src="/images/icons/fisioterapia-cerebro.png" alt="Fisioterapia neurológica"
+                            class="w-20 sm:w-16 mx-auto mb-3" loading="lazy">
+                    </picture>
+                    <h3 class="text-lg font-semibold text-teal-400">Fisioterapia Neurológica</h3>
                 </a>
-            </div>
-            <div class="bg-blue-900 p-6 rounded-lg shadow-md flex flex-col items-center space-y-4 transition transform hover:scale-105 hover:shadow-xl duration-300 animate-fade-up">
-                <img src="images/icons/tlf-cyan.png" alt="Teléfono" class="w-12 h-12">
-                <h3 class="text-xl font-semibold text-white">Llámanos</h3>
-                <a href="tel:+34671011632" class="text-lg text-white hover:text-teal-400 transition duration-300">
-                    +34 671 011 632
+
+                <a href="/fisioterapeuta-geriatrica-domicilio-sevilla/"
+                    class="bg-white p-6 rounded-lg hover:shadow-lg block text-center">
+                    <picture>
+                        <source srcset="/images/icons/fisioterapia-anciano.webp" type="image/webp">
+                        <img src="/images/icons/fisioterapia-anciano.png" alt="Fisioterapia Geriátrica"
+                            class="w-20 sm:w-16 mx-auto mb-3" loading="lazy">
+                    </picture>
+                    <h3 class="text-lg font-semibold text-teal-400">Fisioterapia Geriátrica</h3>
                 </a>
-            </div>
-        
-            <!-- Tarjeta Correo -->
-            <div class="bg-blue-900 p-6 rounded-lg shadow-md flex flex-col items-center space-y-4 transition transform hover:scale-105 hover:shadow-xl duration-300 animate-fade-up ">
-                <img src="images/icons/mail-cyan.png" alt="Correo" class="w-14 h-14">
-                <h3 class="text-xl font-semibold text-white">Correo Electrónico</h3>
-                <a href="mailto:fisiocivis@gmail.com" class="text-lg text-white hover:text-teal-400 transition duration-300">
-                    fisiocivis@gmail.com
+
+                <a href="/fisioterapeuta-traumatologica-domicilio-sevilla/"
+                    class="bg-white p-6 rounded-lg hover:shadow-lg block text-center">
+                    <picture>
+                        <source srcset="/images/icons/fisioterapia-hueso.webp" type="image/webp">
+                        <img src="/images/icons/fisioterapia-hueso.png" alt="Fisioterapia Traumatológica"
+                            class="w-20 sm:w-16 mx-auto mb-3" loading="lazy">
+                    </picture>
+                    <h3 class="text-lg font-semibold text-teal-400">Fisioterapia Traumatológica</h3>
                 </a>
+
+                <a href="/fisioterapeuta-vascular-domicilio-sevilla/"
+                    class="bg-white p-6 rounded-lg hover:shadow-lg block text-center">
+                    <picture>
+                        <source srcset="/images/icons/fisioterapia-sevilla-cardio.webp" type="image/webp">
+                        <img src="/images/icons/fisioterapia-sevilla-cardio.png" alt="Fisioterapia Vascular"
+                            class="w-20 sm:w-16 mx-auto mb-3" loading="lazy">
+                    </picture>
+                    <h3 class="text-lg font-semibold text-teal-400">Fisioterapia Vascular</h3>
+                </a>
+
+                <a href="/fisioterapeuta-atm-domicilio-sevilla/"
+                    class="bg-white p-6 rounded-lg hover:shadow-lg block text-center">
+                    <picture>
+                        <source srcset="/images/icons/fisioterapia-atm.webp" type="image/webp">
+                        <img src="/images/icons/fisioterapia-atm.png" alt="Fisioterapia ATM"
+                            class="w-20 sm:w-16 mx-auto mb-3" loading="lazy">
+                    </picture>
+                    <h3 class="text-lg font-semibold text-teal-400">Fisioterapia ATM</h3>
+                </a>
+
+                <a href="/fisioterapeuta-deportiva-domicilio-sevilla/"
+                    class="bg-white p-6 rounded-lg hover:shadow-lg block text-center">
+                    <picture>
+                        <source srcset="/images/icons/fisioterapia-deportiva.webp" type="image/webp">
+                        <img src="/images/icons/fisioterapia-deportiva.png" alt="Fisioterapia Deportiva"
+                            class="w-20 sm:w-16 mx-auto mb-3" loading="lazy">
+                    </picture>
+                    <h3 class="text-lg font-semibold text-teal-400">Fisioterapia Deportiva</h3>
+                </a>
+
             </div>
         </section>
+
+
     </main>
 
-    <div data-include="footer.html"></div>
-    <script src="js/include.js"></script>
+    <div data-include="/partials/footer.html"></div>
+    <script src="/js/include.js"></script>
+    <script src="/js/header.js" defer></script>
+    <script>
+        AOS.init({
+            duration: 600,
+            once: false,
+            mirror: true
+        });
+    </script>
 </body>
+
 </html>

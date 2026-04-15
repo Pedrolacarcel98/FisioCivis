@@ -7,7 +7,6 @@
     box-sizing: border-box;
 }
 
-
 .reserva-boton {
     position: relative; /* Asegura que el botón esté dentro de su contenedor */
     z-index: 1; /* Envía el botón al fondo */
@@ -15,18 +14,19 @@
 /* Estilo del nav */
 nav {
     background: #ffffff; /* Fondo blanco */
-    height: 80px;
+    height: 90px;
     width: 100%;
 }
 
 /* Estilo del enlace del logo */
 .enlace {
     position: absolute;
-    padding: 20px 50px;
+    padding: 15px 50px;
 }
 
 .logo {
     height: 60px;
+    margin-bottom: 5px;
 }
 
 /* Estilo del menú */
@@ -42,11 +42,11 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #0d9488; /* teal-600 */
+    color: #2dd4bf; /* teal-400 */
     font-size: 18px;
     padding: 7px 13px;
     border-radius: 3px;
-    text-transform: uppercase;
+    text-transform: none;
     transition: color 0.3s ease; /* Transición suave para el color */
 }
 
@@ -60,7 +60,7 @@ li a.active, li a:hover {
 /* Botón de menú para dispositivos pequeños */
 .checkbtn {
     font-size: 30px;
-    color: #0d9488; /* teal-600 */
+    color: #2dd4bf; /* teal-400 */
     float: right;
     line-height: 80px;
     margin-right: 40px;
