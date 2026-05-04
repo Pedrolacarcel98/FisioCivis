@@ -50,47 +50,74 @@
             Si tienes alguna duda o necesitas más información sobre nuestros servicios:
         </p>
 
-        <section class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <!-- WhatsApp -->
-            <a href="https://wa.me/+34623436145?text=Hola!%20me%20gustaría%20pedir%20cita.%20Gracias!" class="block"
-                data-aos="fade-up">
-                <div
-                    class="bg-teal-400 p-6 rounded-lg shadow-md flex flex-col items-center space-y-4 transition transform hover:scale-105 hover:shadow-xl duration-300">
-                    <picture>
-                        <source srcset="/images/icons/whatsapp-blue-900.webp" type="image/webp">
-                        <img src="/images/icons/whatsapp-blue-900.png" alt="WhatsApp fisioterapia a domicilio Sevilla"
-                            class="w-16 h-16" loading="lazy">
-                    </picture>
-                    <h3 class="text-xl font-semibold text-white">WhatsApp</h3>
-                    <p class="text-lg text-blue-900 hover:text-white transition duration-300">Enviar mensaje</p>
+            <a href="https://wa.me/+34623436145?text=Hola!%20me%20gustaría%20pedir%20cita.%20Gracias!" 
+               class="group block"
+               data-aos="fade-up" data-aos-delay="100">
+                <!-- Tarjeta con fondo teal tenue para diferenciarse del body -->
+                <div class="bg-teal-50 p-10 rounded-3xl shadow-[0_10px_40px_-15px_rgba(0,0,0,0.1)] border border-teal-100 flex flex-col items-center text-center transition-all duration-500 hover:shadow-[0_20px_50px_-20px_rgba(45,212,191,0.3)] hover:-translate-y-2">
+                    <div class="w-20 h-20 bg-teal-50 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-teal-100 transition-all duration-500">
+                        <picture>
+                            <source srcset="/images/icons/whatsapp-blue-900.webp" type="image/webp">
+                            <img src="/images/icons/whatsapp-blue-900.png" alt="WhatsApp" class="w-12 h-12 object-contain" loading="lazy">
+                        </picture>
+                    </div>
+                    <h3 class="text-2xl font-bold text-blue-900 mb-2">WhatsApp</h3>
+                    <p class="text-gray-500 mb-6">Respuesta rápida</p>
+                    <span class="inline-flex items-center gap-2 text-teal-500 font-bold group-hover:text-teal-600 transition-colors">
+                        Enviar mensaje
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transform group-hover:translate-x-1 transition-transform" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                        </svg>
+                    </span>
                 </div>
             </a>
 
             <!-- Teléfono -->
-            <a href="tel:+34623436145" class="block" data-aos="fade-up">
-                <div
-                    class="bg-teal-400 p-6 rounded-lg shadow-md flex flex-col items-center space-y-4 transition transform hover:scale-105 hover:shadow-xl duration-300">
-                    <picture>
-                        <source srcset="/images/icons/tlf-blue-900-def.webp" type="image/webp">
-                        <img src="/images/icons/tlf-blue-900-def.png" alt="Teléfono fisioterapia a domicilio Sevilla"
-                            class="w-16 h-16" loading="lazy">
-                    </picture>
-                    <h3 class="text-xl font-semibold text-white">Llámanos</h3>
-                    <p class="text-lg text-blue-900 hover:text-white transition duration-300">623 436 145</p>
+            <a href="tel:+34623436145" 
+               class="group block"
+               data-aos="fade-up" data-aos-delay="200">
+                <!-- Tarjeta con fondo teal tenue para diferenciarse del body -->
+                <div class="bg-teal-50 p-10 rounded-3xl shadow-[0_10px_40px_-15px_rgba(0,0,0,0.1)] border border-teal-100 flex flex-col items-center text-center transition-all duration-500 hover:shadow-[0_20px_50px_-20px_rgba(30,58,138,0.2)] hover:-translate-y-2">
+                    <div class="w-20 h-20 bg-blue-50 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-blue-100 transition-all duration-500">
+                        <picture>
+                            <source srcset="/images/icons/tlf-blue-900-def.webp" type="image/webp">
+                            <img src="/images/icons/tlf-blue-900-def.png" alt="Teléfono" class="w-12 h-12 object-contain" loading="lazy">
+                        </picture>
+                    </div>
+                    <h3 class="text-2xl font-bold text-blue-900 mb-2">Llámanos</h3>
+                    <p class="text-gray-500 mb-6 text-lg">623 436 145</p>
+                    <span class="inline-flex items-center gap-2 text-blue-900 font-bold group-hover:text-blue-700 transition-colors">
+                        Llamar ahora
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transform group-hover:translate-x-1 transition-transform" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                        </svg>
+                    </span>
                 </div>
             </a>
 
             <!-- Correo -->
-            <a href="mailto:fisiocivis@gmail.com" class="block" data-aos="fade-up">
-                <div
-                    class="bg-teal-400 p-6 rounded-lg shadow-md flex flex-col items-center space-y-4 transition transform hover:scale-105 hover:shadow-xl duration-300">
-                    <picture>
-                        <source srcset="/images/icons/correo-blue-900.webp" type="image/webp">
-                        <img src="/images/icons/correo-blue-900.png" alt="Correo electrónico fisioterapia Sevilla"
-                            class="w-16 h-16" loading="lazy">
-                    </picture>
-                    <h3 class="text-xl font-semibold text-white">Correo Electrónico</h3>
-                    <p class="text-lg text-blue-900 hover:text-white transition duration-300">fisiocivis@gmail.com</p>
+            <a href="mailto:fisiocivis@gmail.com" 
+               class="group block"
+               data-aos="fade-up" data-aos-delay="300">
+                <!-- Tarjeta con fondo teal tenue para diferenciarse del body -->
+                <div class="bg-teal-50 p-10 rounded-3xl shadow-[0_10px_40px_-15px_rgba(0,0,0,0.1)] border border-teal-100 flex flex-col items-center text-center transition-all duration-500 hover:shadow-[0_20px_50px_-20px_rgba(45,212,191,0.3)] hover:-translate-y-2">
+                    <div class="w-20 h-20 bg-teal-50 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-teal-100 transition-all duration-500">
+                        <picture>
+                            <source srcset="/images/icons/correo-blue-900.webp" type="image/webp">
+                            <img src="/images/icons/correo-blue-900.png" alt="Email" class="w-12 h-12 object-contain" loading="lazy">
+                        </picture>
+                    </div>
+                    <h3 class="text-2xl font-bold text-blue-900 mb-2">Email</h3>
+                    <p class="text-gray-500 mb-6 truncate max-w-full px-2">fisiocivis@gmail.com</p>
+                    <span class="inline-flex items-center gap-2 text-teal-500 font-bold group-hover:text-teal-600 transition-colors">
+                        Escribir correo
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transform group-hover:translate-x-1 transition-transform" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                        </svg>
+                    </span>
                 </div>
             </a>
         </section>
@@ -145,6 +172,16 @@
                             class="w-20 sm:w-16 mx-auto mb-3" loading="lazy">
                     </picture>
                     <h3 class="text-lg font-semibold text-teal-400">Fisioterapia Vascular</h3>
+                </a>
+
+                <a href="/fisioterapeuta-respiratoria-domicilio-sevilla/"
+                    class="bg-white p-6 rounded-lg hover:shadow-lg block text-center">
+                    <picture>
+                        <source srcset="/images/icons/fisioterapia-respiratoria.webp" type="image/webp">
+                        <img src="/images/icons/fisioterapia-respiratoria.png" alt="Fisioterapia Respiratoria"
+                            class="w-20 sm:w-16 mx-auto mb-3" loading="lazy">
+                    </picture>
+                    <h3 class="text-lg font-semibold text-teal-400">Fisioterapia Respiratoria</h3>
                 </a>
 
                 <a href="/fisioterapeuta-atm-domicilio-sevilla/"

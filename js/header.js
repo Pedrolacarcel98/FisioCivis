@@ -1,46 +1,71 @@
-// header.js
-function initHeaderMenu() {
-  const burger   = document.getElementById('burger');
-  const mainMenu = document.getElementById('mainMenu');
-  const servBtn  = document.getElementById('servBtn');
-  const subMenu  = document.getElementById('subMenu');
-  const caret    = document.getElementById('caret');
+/**
+ * FisioCivis Premium Header Logic
+ */
 
-  if (!burger || !mainMenu) return; // todavía no existe el header
+(function() {
+    function toggleMobileMenu(forceClose = false) {
+        const mobileMenu = document.getElementById('mobileMenu');
+        if (!mobileMenu) return;
 
-  /* --- Botón hamburguesa --- */
-  burger.addEventListener('click', () => {
-    mainMenu.classList.toggle('-translate-y-full');
-  });
+        const isVisible = !mobileMenu.classList.contains('invisible');
 
-  /* --- Submenú Servicios (solo <768 px) --- */
-  if (servBtn && subMenu) {
-    subMenu.classList.add('hidden');      // oculto por defecto en móvil
-    servBtn.addEventListener('click', () => {
-      if (window.innerWidth < 768) {
-        subMenu.classList.toggle('hidden');
-        caret?.classList.toggle('rotate-180');
-      }
-    });
-  }
-}
-
-/* Comprueba si el header ya está y, si no, espera a que se inserte */
-function waitForHeaderAndInit() {
-  if (document.getElementById('burger')) {
-    initHeaderMenu();
-    return;                     // listo
-  }
-
-  /* Observa cambios en el DOM hasta que aparezca #burger */
-  const obs = new MutationObserver(() => {
-    if (document.getElementById('burger')) {
-      initHeaderMenu();
-      obs.disconnect();
+        if (isVisible || forceClose) {
+            // Cerrar
+            mobileMenu.classList.add('opacity-0', 'pointer-events-none');
+            setTimeout(() => {
+                mobileMenu.classList.add('invisible');
+            }, 500);
+            document.body.style.overflow = '';
+        } else {
+            // Abrir
+            mobileMenu.classList.remove('invisible');
+            // Timeout para asegurar que la transición de opacidad funcione
+            setTimeout(() => {
+                mobileMenu.classList.remove('opacity-0', 'pointer-events-none');
+            }, 10);
+            document.body.style.overflow = 'hidden';
+        }
     }
-  });
-  obs.observe(document.body, { childList: true, subtree: true });
-}
 
-/* Lanza la espera cuando el documento base se haya cargado */
-document.addEventListener('DOMContentLoaded', waitForHeaderAndInit);
+    document.addEventListener('click', function(e) {
+        // Abrir menú
+        if (e.target.closest('#burgerBtn')) {
+            toggleMobileMenu();
+        }
+
+        // Cerrar menú (botón X)
+        if (e.target.closest('#closeMobileBtn')) {
+            toggleMobileMenu(true);
+        }
+
+        // Acordeón de servicios
+        if (e.target.closest('#mobileServBtn')) {
+            const subMenu = document.getElementById('mobileSubMenu');
+            const caret = document.getElementById('mobileCaret');
+            if (subMenu) {
+                const isClosed = subMenu.style.maxHeight === '0px' || !subMenu.style.maxHeight;
+                subMenu.style.maxHeight = isClosed ? subMenu.scrollHeight + 'px' : '0px';
+                caret.classList.toggle('rotate-180', isClosed);
+            }
+        }
+
+        // Cerrar menú al hacer clic en cualquier enlace
+        if (e.target.closest('#mobileMenu a')) {
+            toggleMobileMenu(true);
+        }
+    });
+
+    // Efecto Scroll Navbar
+    window.addEventListener('scroll', function() {
+        const navbar = document.getElementById('navbar');
+        if (!navbar) return;
+
+        if (window.scrollY > 40) {
+            navbar.classList.add('h-16', 'shadow-2xl', 'bg-white/100');
+            navbar.classList.remove('h-20', 'bg-white/95');
+        } else {
+            navbar.classList.add('h-20', 'bg-white/95');
+            navbar.classList.remove('h-16', 'shadow-2xl', 'bg-white/100');
+        }
+    });
+})();

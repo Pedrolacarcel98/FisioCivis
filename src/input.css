@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Importar estilos existentes si no quieres moverlos todos a clases de tailwind aún */
+@import "../css/fuentes.css";
+@import "../css/header.css";
+
+/* Estilos personalizados globales */
+@layer base {
+  body {
+    @apply font-poppins text-gray-900 bg-white;
+  }
+}

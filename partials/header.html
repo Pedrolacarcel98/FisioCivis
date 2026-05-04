@@ -1,45 +1,118 @@
-<!DOCTYPE html>
-<html lang="en">
+<!-- Navbar Principal -->
+<nav id="navbar" class="fixed top-0 left-0 w-full bg-white/95 backdrop-blur-xl border-b border-teal-50 z-[1000] transition-all duration-300 h-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full">
+        <div class="flex justify-between items-center h-full">
+            <!-- Logo -->
+            <div class="flex-shrink-0 flex items-center">
+                <a href="/index/" class="block transition-transform duration-300 hover:scale-105">
+                    <img src="/images/Fisiocivis.png" alt="Fisiocivis Logo" class="h-10 sm:h-12 w-auto">
+                </a>
+            </div>
 
-<head>
+            <!-- Menú Escritorio -->
+            <div class="hidden md:flex items-center space-x-8 lg:space-x-12">
+                <a href="/index/" class="text-blue-900 font-semibold hover:text-teal-500 transition-colors">Inicio</a>
+                
+                <!-- Desplegable Servicios -->
+                <div class="relative group py-4">
+                    <button class="flex items-center gap-1 text-blue-900 font-semibold group-hover:text-teal-500 transition-colors outline-none">
+                        Servicios
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transition-transform group-hover:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <!-- Dropdown Desktop -->
+                    <div class="absolute left-1/2 -translate-x-1/2 mt-2 w-72 bg-white rounded-3xl shadow-2xl border border-teal-50 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top group-hover:translate-y-0 -translate-y-4 z-[1100] overflow-hidden p-2">
+                        <div class="space-y-1">
+                            <a href="/fisioterapeuta-neurologica-domicilio-sevilla/" class="block px-5 py-3 text-sm font-medium text-gray-700 hover:bg-teal-50 hover:text-teal-600 rounded-2xl transition-all">F. Neurológica</a>
+                            <a href="/fisioterapeuta-geriatrica-domicilio-sevilla/" class="block px-5 py-3 text-sm font-medium text-gray-700 hover:bg-teal-50 hover:text-teal-600 rounded-2xl transition-all">F. Geriátrica</a>
+                            <a href="/fisioterapeuta-traumatologica-domicilio-sevilla/" class="block px-5 py-3 text-sm font-medium text-gray-700 hover:bg-teal-50 hover:text-teal-600 rounded-2xl transition-all">F. Traumatológica</a>
+                            <a href="/fisioterapeuta-respiratoria-domicilio-sevilla/" class="block px-5 py-3 text-sm font-medium text-gray-700 hover:bg-teal-50 hover:text-teal-600 rounded-2xl transition-all">F. Respiratoria</a>
+                            <a href="/fisioterapeuta-vascular-domicilio-sevilla/" class="block px-5 py-3 text-sm font-medium text-gray-700 hover:bg-teal-50 hover:text-teal-600 rounded-2xl transition-all">F. Vascular</a>
+                            <a href="/fisioterapeuta-atm-domicilio-sevilla/" class="block px-5 py-3 text-sm font-medium text-gray-700 hover:bg-teal-50 hover:text-teal-600 rounded-2xl transition-all">F. ATM</a>
+                            <a href="/fisioterapeuta-deportiva-domicilio-sevilla/" class="block px-5 py-3 text-sm font-medium text-gray-700 hover:bg-teal-50 hover:text-teal-600 rounded-2xl transition-all">F. Deportiva</a>
+                            <div class="h-px bg-teal-50 my-1 mx-4"></div>
+                            <a href="/fisioterapeuta-servicios-sevilla/" class="block px-5 py-4 text-sm font-bold text-white bg-teal-400 hover:bg-blue-900 rounded-2xl transition-all text-center">Todos los servicios</a>
+                        </div>
+                    </div>
+                </div>
 
-    <meta charset="UTF-8">
-        
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-K86ZMG8J');</script>
+                <a href="/precios-fisioterapeuta-sevilla/" class="text-blue-900 font-semibold hover:text-teal-500 transition-colors">Precios</a>
+                <a href="/saber/" class="text-blue-900 font-semibold hover:text-teal-500 transition-colors">Conócenos</a>
+                <a href="/contacto/" class="bg-teal-400 text-white px-8 py-3 rounded-full font-bold hover:bg-blue-900 hover:shadow-xl transition-all transform hover:-translate-y-0.5">Contacto</a>
+            </div>
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menú Responsive</title>
+            <!-- Botón Hamburguesa -->
+            <div class="md:hidden flex items-center">
+                <button id="burgerBtn" class="inline-flex items-center justify-center p-3 rounded-2xl text-teal-500 hover:bg-teal-50 transition-all active:scale-90" aria-expanded="false">
+                    <svg class="h-9 w-9" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
 
-    <link rel="stylesheet" href="/css/header.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <!-- Menú Móvil Full-Screen Overlay -->
+    <div id="mobileMenu" class="fixed inset-0 w-full h-screen bg-white z-[2000] invisible opacity-0 pointer-events-none transition-all duration-500 ease-in-out md:hidden flex flex-col">
+        <!-- Header del Menú -->
+        <div class="flex items-center justify-between px-6 h-20 border-b border-teal-50 flex-shrink-0">
+            <img src="/images/Fisiocivis.png" alt="Fisiocivis" class="h-10 w-auto">
+            <button id="closeMobileBtn" class="p-3 rounded-2xl text-gray-400 hover:bg-gray-50 active:scale-90 transition-all">
+                <svg class="h-9 w-9" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
 
-</head>
+        <!-- Contenido Centrado -->
+        <div class="flex-1 flex flex-col justify-center px-8 space-y-2 overflow-y-auto pb-12">
+            <a href="/index/" class="mobile-link text-4xl font-bold text-blue-900 py-4 border-b border-gray-50 flex justify-between items-center group">
+                Inicio
+                <span class="text-teal-300 transform group-hover:translate-x-2 transition-transform">→</span>
+            </a>
+            
+            <div class="py-4 border-b border-gray-50">
+                <button id="mobileServBtn" class="flex justify-between items-center w-full text-4xl font-bold text-blue-900 group">
+                    Servicios
+                    <svg id="mobileCaret" class="h-8 w-8 text-teal-300 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+                <div id="mobileSubMenu" class="max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                    <div class="grid grid-cols-1 gap-1 pt-6 pb-2 pl-4">
+                        <a href="/fisioterapeuta-neurologica-domicilio-sevilla/" class="text-xl text-gray-500 py-3 active:text-teal-500 transition-colors">F. Neurológica</a>
+                        <a href="/fisioterapeuta-geriatrica-domicilio-sevilla/" class="text-xl text-gray-500 py-3 active:text-teal-500 transition-colors">F. Geriátrica</a>
+                        <a href="/fisioterapeuta-traumatologica-domicilio-sevilla/" class="text-xl text-gray-500 py-3 active:text-teal-500 transition-colors">F. Traumatológica</a>
+                        <a href="/fisioterapeuta-respiratoria-domicilio-sevilla/" class="text-xl text-gray-500 py-3 active:text-teal-500 transition-colors">F. Respiratoria</a>
+                        <a href="/fisioterapeuta-vascular-domicilio-sevilla/" class="text-xl text-gray-500 py-3 active:text-teal-500 transition-colors">F. Vascular</a>
+                        <a href="/fisioterapeuta-atm-domicilio-sevilla/" class="text-xl text-gray-500 py-3 active:text-teal-500 transition-colors">F. ATM</a>
+                        <a href="/fisioterapeuta-deportiva-domicilio-sevilla/" class="text-xl text-gray-500 py-3 active:text-teal-500 transition-colors">F. Deportiva</a>
+                        <a href="/fisioterapeuta-servicios-sevilla/" class="text-xl font-bold text-teal-500 pt-4 underline underline-offset-8">Todos los servicios</a>
+                    </div>
+                </div>
+            </div>
 
-<body>
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K86ZMG8J" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-        </label>
-        <a href="/index/" class="enlace">
-            <img src="/images/Fisiocivis.png" alt="Fisiocivis - Fisioterapia a domicilio en Sevilla" class="logo">
-        </a>
-        <ul>
+            <a href="/precios-fisioterapeuta-sevilla/" class="mobile-link text-4xl font-bold text-blue-900 py-4 border-b border-gray-50 flex justify-between items-center group">
+                Precios
+                <span class="text-teal-300 transform group-hover:translate-x-2 transition-transform">→</span>
+            </a>
+            
+            <a href="/saber/" class="mobile-link text-4xl font-bold text-blue-900 py-4 border-b border-gray-50 flex justify-between items-center group">
+                Conócenos
+                <span class="text-teal-300 transform group-hover:translate-x-2 transition-transform">→</span>
+            </a>
 
-            <li><a href="/index/">Inicio</a></li>
-            <li><a href="/fisioterapeuta-servicios-sevilla/">Servicios</a></li>
-            <li><a href="/precios-fisioterapeuta-sevilla/">Precios & Bonos</a></li>
-            <li><a href="/contacto/">Contacto</a></li>
-            <li><a href="/saber/">¿Quienes Somos?</a></li>
+            <div class="pt-10">
+                <a href="/contacto/" class="block w-full bg-teal-400 text-white text-center text-2xl font-bold py-6 rounded-3xl shadow-2xl shadow-teal-100 active:scale-95 transition-all">
+                    Contactar Ahora
+                </a>
+            </div>
 
-
-
-        </ul>
-    </nav>
-
-    <section></section>
-</body>
-
-</html>
+            <div class="pt-12 text-center">
+                <p class="text-gray-400 font-medium">FisioCivis - Sevilla</p>
+                <a href="tel:+34623436145" class="text-teal-500 text-2xl font-bold mt-2 block">623 436 145</a>
+            </div>
+        </div>
+    </div>
+</nav>
