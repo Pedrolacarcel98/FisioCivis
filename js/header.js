@@ -11,7 +11,8 @@
 
         if (isVisible || forceClose) {
             // Cerrar
-            mobileMenu.classList.add('opacity-0', 'pointer-events-none');
+            mobileMenu.classList.add('opacity-0', '-translate-y-full', 'pointer-events-none');
+            mobileMenu.classList.remove('translate-y-0');
             setTimeout(() => {
                 mobileMenu.classList.add('invisible');
             }, 500);
@@ -19,9 +20,10 @@
         } else {
             // Abrir
             mobileMenu.classList.remove('invisible');
-            // Timeout para asegurar que la transición de opacidad funcione
+            // Timeout para asegurar que la transición de opacidad y transformación funcione
             setTimeout(() => {
-                mobileMenu.classList.remove('opacity-0', 'pointer-events-none');
+                mobileMenu.classList.remove('opacity-0', '-translate-y-full', 'pointer-events-none');
+                mobileMenu.classList.add('translate-y-0');
             }, 10);
             document.body.style.overflow = 'hidden';
         }

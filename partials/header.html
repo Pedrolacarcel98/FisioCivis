@@ -54,7 +54,7 @@
     </div>
 
     <!-- Menú Móvil Full-Screen Overlay -->
-    <div id="mobileMenu" class="fixed inset-0 w-full h-screen bg-white z-[2000] invisible opacity-0 pointer-events-none transition-all duration-500 ease-in-out md:hidden flex flex-col">
+    <div id="mobileMenu" class="fixed inset-0 w-full h-screen bg-white z-[2000] invisible opacity-0 -translate-y-full pointer-events-none transition-all duration-500 ease-in-out md:hidden flex flex-col">
         <!-- Header del Menú -->
         <div class="flex items-center justify-between px-6 h-20 border-b border-teal-50 flex-shrink-0">
             <img src="/images/Fisiocivis.png" alt="Fisiocivis" class="h-10 w-auto">
@@ -104,8 +104,9 @@
             </a>
 
             <div class="pt-8">
-                <a href="/contacto/" class="block w-full bg-teal-400 text-white text-center text-xl font-bold py-5 rounded-2xl shadow-xl shadow-teal-100 active:scale-95 transition-all">
-                    Contactar Ahora
+                <a href="/contacto/" class="flex items-center justify-center gap-3 w-full bg-teal-400 text-white text-center text-xl font-bold py-5 rounded-2xl shadow-xl shadow-teal-100 active:scale-95 transition-all">
+                    <img src="/images/icons/whatsapp-blue-900.webp" alt="WhatsApp" class="w-6 h-6 filter brightness-0 invert">
+                    Contactar
                 </a>
             </div>
 
