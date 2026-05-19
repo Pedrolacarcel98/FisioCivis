@@ -36,3 +36,5 @@ Al recibir una tarea:
 1. Declara que trabajarás bajo el estándar **Tailwind CSS**.
 2. Presenta el código con comentarios explicativos internos.
 3. **Provee una breve sección de documentación** técnica explicando el impacto del cambio en el proyecto global.
+
+
