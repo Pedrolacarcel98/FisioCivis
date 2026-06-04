@@ -7,12 +7,14 @@
     "dev": "concurrently \"npm run tailwind:watch\" \"browser-sync start --config bs-config.js\"",
     "tailwind:watch": "npx tailwindcss -i ./src/input.css -o ./css/tailwind.css --watch",
     "build": "npx tailwindcss -i ./src/input.css -o ./css/tailwind.css --minify",
-    "serve": "browser-sync start --config bs-config.js"
+    "serve": "browser-sync start --config bs-config.js",
+    "reviews:update": "node scripts/fetch-reviews.js"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",
     "browser-sync": "^2.29.3",
     "concurrently": "^8.2.0",
+    "dotenv": "^17.4.2",
     "postcss": "^8.4.24",
     "tailwindcss": "^3.3.2"
   }
