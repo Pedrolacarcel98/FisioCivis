@@ -107,8 +107,8 @@
     <!-- Tarjeta Principal Hero -->
     <div class="relative group rounded-[2.5rem] shadow-2xl shadow-blue-900/10 overflow-hidden">
       
-      <!-- Imagen de fondo nítida -->
-      <div class="absolute inset-0 bg-[url('../images/services-fisioterapia/fisio-index.jpg')] bg-cover bg-center transition-transform duration-1000 group-hover:scale-105"></div>
+      <!-- Imagen de fondo: ger-2 para móvil, ger-3 para desktop para evitar pixelado -->
+      <div class="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-105 bg-[url('../images/services-fisioterapia/ger-2.jpg')] md:bg-[url('../images/services-fisioterapia/ger-3.jpg')]"></div>
       
       <!-- Overlay mínimo solo para contraste -->
       <div class="absolute inset-0 bg-black/5"></div>
@@ -234,79 +234,109 @@
         <a href="/fisioterapeuta-servicios-sevilla/" class="text-blue-900 font-semibold hover:underline">Ver
           servicios</a>.
       </h3>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-6">
+      <div id="services-grid" class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 mt-6 overflow-hidden transition-all duration-500 max-h-[220px] sm:max-h-none">
         <!-- Tarjetas de servicios -->
         <a href="/fisioterapeuta-neurologica-domicilio-sevilla/"
-          class="bg-white p-6 rounded-lg hover:shadow-lg block text-center">
+          class="bg-white p-4 sm:p-6 rounded-xl hover:shadow-lg block text-center border border-gray-50 shadow-sm">
           <picture>
             <source srcset="/images/icons/fisioterapia-cerebro.webp" type="image/webp">
             <img src="/images/icons/fisioterapia-cerebro.jpg" alt="Fisioterapia neurológica"
-              class="w-20 sm:w-16 mx-auto mb-3" loading="lazy">
+              class="w-12 sm:w-16 mx-auto mb-3" loading="lazy">
           </picture>
-          <h3 class="text-lg font-semibold text-teal-400">Fisioterapia Neurológica</h3>
+          <h3 class="text-sm sm:text-lg font-semibold text-teal-400 leading-tight">Fisioterapia Neurológica</h3>
         </a>
 
         <a href="/fisioterapeuta-geriatrica-domicilio-sevilla/"
-          class="bg-white p-6 rounded-lg hover:shadow-lg block text-center">
+          class="bg-white p-4 sm:p-6 rounded-xl hover:shadow-lg block text-center border border-gray-50 shadow-sm">
           <picture>
             <source srcset="/images/icons/fisioterapia-anciano.webp" type="image/webp">
             <img src="/images/icons/fisioterapia-anciano.jpg" alt="Fisioterapia Geriátrica"
-              class="w-20 sm:w-16 mx-auto mb-3" loading="lazy">
+              class="w-12 sm:w-16 mx-auto mb-3" loading="lazy">
           </picture>
-          <h3 class="text-lg font-semibold text-teal-400">Fisioterapia Geriátrica</h3>
+          <h3 class="text-sm sm:text-lg font-semibold text-teal-400 leading-tight">Fisioterapia Geriátrica</h3>
         </a>
 
         <a href="/fisioterapeuta-traumatologica-domicilio-sevilla/"
-          class="bg-white p-6 rounded-lg hover:shadow-lg block text-center">
+          class="bg-white p-4 sm:p-6 rounded-xl hover:shadow-lg block text-center border border-gray-50 shadow-sm">
           <picture>
             <source srcset="/images/icons/fisioterapia-hueso.webp" type="image/webp">
             <img src="/images/icons/fisioterapia-hueso.jpg" alt="Fisioterapia Traumatológica"
-              class="w-20 sm:w-16 mx-auto mb-3" loading="lazy">
+              class="w-12 sm:w-16 mx-auto mb-3" loading="lazy">
           </picture>
-          <h3 class="text-lg font-semibold text-teal-400">Fisioterapia Traumatológica</h3>
+          <h3 class="text-sm sm:text-lg font-semibold text-teal-400 leading-tight">Fisioterapia Traumatológica</h3>
         </a>
 
         <a href="/fisioterapeuta-vascular-domicilio-sevilla/"
-          class="bg-white p-6 rounded-lg hover:shadow-lg block text-center">
+          class="bg-white p-4 sm:p-6 rounded-xl hover:shadow-lg block text-center border border-gray-50 shadow-sm">
           <picture>
             <source srcset="/images/icons/fisioterapia-sevilla-cardio.webp" type="image/webp">
             <img src="/images/icons/fisioterapia-sevilla-cardio.jpg" alt="Fisioterapia Vascular"
-              class="w-20 sm:w-16 mx-auto mb-3" loading="lazy">
+              class="w-12 sm:w-16 mx-auto mb-3" loading="lazy">
           </picture>
-          <h3 class="text-lg font-semibold text-teal-400">Fisioterapia Vascular</h3>
+          <h3 class="text-sm sm:text-lg font-semibold text-teal-400 leading-tight">Fisioterapia Vascular</h3>
         </a>
 
         <a href="/fisioterapeuta-respiratoria-domicilio-sevilla/"
-          class="bg-white p-6 rounded-lg hover:shadow-lg block text-center">
+          class="bg-white p-4 sm:p-6 rounded-xl hover:shadow-lg block text-center border border-gray-50 shadow-sm">
           <picture>
             <source srcset="/images/icons/fisioterapia-respiratoria.webp" type="image/webp">
             <img src="/images/icons/fisioterapia-respiratoria.jpg" alt="Fisioterapia Respiratoria"
-              class="w-20 sm:w-16 mx-auto mb-3" loading="lazy">
+              class="w-12 sm:w-16 mx-auto mb-3" loading="lazy">
           </picture>
-          <h3 class="text-lg font-semibold text-teal-400">Fisioterapia Respiratoria</h3>
+          <h3 class="text-sm sm:text-lg font-semibold text-teal-400 leading-tight">Fisioterapia Respiratoria</h3>
         </a>
 
         <a href="/fisioterapeuta-atm-domicilio-sevilla/"
-          class="bg-white p-6 rounded-lg hover:shadow-lg block text-center">
+          class="bg-white p-4 sm:p-6 rounded-xl hover:shadow-lg block text-center border border-gray-50 shadow-sm">
           <picture>
             <source srcset="/images/icons/fisioterapia-atm.webp" type="image/webp">
-            <img src="/images/icons/fisioterapia-atm.jpg" alt="Fisioterapia ATM" class="w-20 sm:w-16 mx-auto mb-3"
+            <img src="/images/icons/fisioterapia-atm.jpg" alt="Fisioterapia ATM" class="w-12 sm:w-16 mx-auto mb-3"
               loading="lazy">
           </picture>
-          <h3 class="text-lg font-semibold text-teal-400">Fisioterapia ATM</h3>
+          <h3 class="text-sm sm:text-lg font-semibold text-teal-400 leading-tight">Fisioterapia ATM</h3>
         </a>
 
         <a href="/fisioterapeuta-deportiva-domicilio-sevilla/"
-          class="bg-white p-6 rounded-lg hover:shadow-lg block text-center">
+          class="bg-white p-4 sm:p-6 rounded-xl hover:shadow-lg block text-center border border-gray-50 shadow-sm">
           <picture>
             <source srcset="/images/icons/fisioterapia-deportiva.webp" type="image/webp">
             <img src="/images/icons/fisioterapia-deportiva.jpg" alt="Fisioterapia Deportiva"
-              class="w-20 sm:w-16 mx-auto mb-3" loading="lazy">
+              class="w-12 sm:w-16 mx-auto mb-3" loading="lazy">
           </picture>
-          <h3 class="text-lg font-semibold text-teal-400">Fisioterapia Deportiva</h3>
+          <h3 class="text-sm sm:text-lg font-semibold text-teal-400 leading-tight">Fisioterapia Deportiva</h3>
         </a>
 
       </div>
+
+      <!-- Enlace Ver más (Solo móvil) -->
+      <div class="mt-6 sm:hidden">
+        <button id="toggle-services" class="text-blue-900 font-bold flex items-center justify-center gap-1 mx-auto hover:text-teal-500 transition-colors">
+          <span id="toggle-text">Ver todos los servicios</span>
+          <svg id="toggle-icon" xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+      </div>
+
+      <script>
+        document.getElementById('toggle-services')?.addEventListener('click', function() {
+          const grid = document.getElementById('services-grid');
+          const text = document.getElementById('toggle-text');
+          const icon = document.getElementById('toggle-icon');
+          
+          if (grid.classList.contains('expanded')) {
+            grid.style.maxHeight = '220px';
+            grid.classList.remove('expanded');
+            text.textContent = 'Ver todos los servicios';
+            icon.style.transform = 'rotate(0deg)';
+          } else {
+            grid.style.maxHeight = '1500px'; // Un valor suficientemente alto para mostrar todo
+            grid.classList.add('expanded');
+            text.textContent = 'Ver menos';
+            icon.style.transform = 'rotate(180deg)';
+          }
+        });
+      </script>
     </section>
 
     <!-- Reseñas (Trustindex) -->
@@ -314,10 +344,48 @@
       <h2 class="text-3xl sm:text-4xl md:text-5xl font-semibold text-blue-900 px-2 text-center mb-8">
         Lo que dicen nuestros <span class="text-teal-400">pacientes</span>
       </h2>
-      <div class="max-w-6xl mx-auto px-4 min-h-[200px]">
-        <!-- El carrusel se cargará aquí a través del script de Trustindex -->
-        <script defer async src='https://cdn.trustindex.io/loader.js?a7a7e5d723a7308f7906d7e418f'></script>
+      <div class="max-w-6xl mx-auto px-4 relative group">
+        <!-- Contenedor del Carrusel -->
+        <div id="carousel-container" class="flex overflow-x-auto snap-x snap-mandatory gap-6 py-4 items-stretch no-scrollbar scroll-smooth">
+          <!-- Las reseñas se cargarán aquí dinámicamente a través de js/carousel.js -->
+          <div class="min-w-full flex justify-center py-10">
+            <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-teal-400"></div>
+          </div>
+        </div>
+
+        <!-- Botones de Navegación (Solo visibles en Desktop al hacer hover) -->
+        <button id="prev-btn" class="absolute -left-4 top-1/2 -translate-y-1/2 bg-white text-blue-900 p-3 rounded-full shadow-xl hover:bg-teal-400 hover:text-white transition-all opacity-0 group-hover:opacity-100 hidden md:flex items-center justify-center z-10" aria-label="Anterior">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+        <button id="next-btn" class="absolute -right-4 top-1/2 -translate-y-1/2 bg-white text-blue-900 p-3 rounded-full shadow-xl hover:bg-teal-400 hover:text-white transition-all opacity-0 group-hover:opacity-100 hidden md:flex items-center justify-center z-10" aria-label="Siguiente">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
       </div>
+
+      <!-- Botón Ver más en Google -->
+      <div class="mt-12 text-center">
+        <a href="https://www.google.com/search?sa=X&sca_esv=d7aa3a49a8c877b6&hl=es-ES&sxsrf=ANbL-n6pbTSCulfGXv7ZozOB_NXi5ca1lw:1780576978306&q=Fisiocivis+-+Fisioterapia+a+Domicilio+en+Sevilla+Rese%C3%B1as&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxIyNzUzNjS0MDA1MzMxMQAxNjAyvmK0dMsszsxPzizLLFbQVQBzSlKLEgsyExUSFVzyczOTM3My8xVS8xSCU8syc3ISFYJSi1MPb0wsXsRKvl4APOIok5EAAAA&rldimm=756311805664401805&tbm=lcl&ved=2ahUKEwjF4aWSzu2UAxXbUaQEHdA3ITkQ9fQKegQIJRAG&biw=1920&bih=911&dpr=1#lkt=LocalPoiReviews" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="inline-flex items-center gap-3 bg-white border-2 border-blue-900 text-blue-900 px-8 py-3 rounded-full font-bold hover:bg-blue-900 hover:text-white transition-all duration-300 shadow-md transform hover:scale-105">
+          <img src="/images/icons/Google-Review-Symbol.png" alt="Google" class="w-6 h-auto">
+          Ver todas las reseñas en Google
+        </a>
+      </div>
+
+      <!-- Estilos específicos para ocultar scrollbar manteniendo funcionalidad -->
+      <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        .custom-scrollbar::-webkit-scrollbar { width: 4px; }
+        .custom-scrollbar::-webkit-scrollbar-track { background: #f1f1f1; border-radius: 10px; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: #2dd4bf; border-radius: 10px; }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: #1e3a8a; }
+      </style>
     </section>
 
     <!-- Contacto -->
@@ -380,6 +448,8 @@
 
     <div data-include="/partials/footer.html"></div>
 
+  <script src="/js/reviews-data.js" defer></script>
+  <script src="/js/carousel.js" defer></script>
   <script src="/js/include.js" defer></script>
   <script src="/js/header.js" defer></script>
   <script>
