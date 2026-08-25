@@ -107,25 +107,25 @@
     <!-- Tarjeta Principal Hero -->
     <div class="relative group rounded-[2.5rem] shadow-2xl shadow-blue-900/10 overflow-hidden">
       
-      <!-- Imagen de fondo: ger-2 para móvil, ger-3 para desktop para evitar pixelado -->
-      <div class="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-105 bg-[url('../images/services-fisioterapia/ger-2.jpg')] md:bg-[url('../images/services-fisioterapia/ger-3.jpg')]"></div>
+      <!-- Imagen de fondo: principal.jpg para móvil y ordenador. En PC se enfoca abajo (imagen desplazada arriba) -->
+      <div class="absolute inset-0 bg-cover bg-[position:center_top_15%] md:bg-bottom transition-transform duration-1000 group-hover:scale-105 bg-[url('../images/services-fisioterapia/principal.jpg')] md:bg-[url('../images/services-fisioterapia/principal.jpg')]"></div>
       
       <!-- Overlay mínimo solo para contraste -->
       <div class="absolute inset-0 bg-black/5"></div>
 
       <div class="relative z-10 py-16 sm:py-24 px-6 flex flex-col items-center">
         
-        <!-- Subtarjeta Título: Más pequeña y transparente -->
+        <!-- Subtarjeta Título: Efecto cristal traslúcido para legibilidad -->
         <div class="bg-white/40 backdrop-blur-md px-8 py-10 rounded-[2rem] shadow-lg border border-white/30 mb-10 inline-block text-center transition-all duration-300">
+          <span class="text-teal-500 font-bold uppercase tracking-[0.2em] text-xs mb-3 block">Excelencia en Fisioterapia</span>
           <h2 class="text-4xl sm:text-5xl md:text-6xl font-black tracking-tight leading-tight">
             <span class="text-blue-900">Bienvenido a</span>
             <br>
             <span class="text-blue-900">Fisio</span><span class="text-teal-400">civis</span>
           </h2>
-          <span class="text-teal-500 font-bold uppercase tracking-[0.2em] text-xs mb-3 block">Excelencia en Fisioterapia</span>
-      <p class="text-xl sm:text-3xl text-blue-900 font-light leading-relaxed max-w-3xl mx-auto">
-        Fisioterapia de <span class="font-bold border-b-2 border-teal-400/60">máxima calidad</span> en la comodidad de tu domicilio.
-      </p>
+          <p class="text-xl sm:text-3xl text-blue-900 font-light leading-relaxed max-w-3xl mx-auto mt-4">
+            Fisioterapia de <span class="font-bold border-b-2 border-teal-400/60">máxima calidad</span> en la comodidad de tu domicilio.
+          </p>
         </div>
 
         <!-- Botón de Acción -->
